@@ -12,8 +12,8 @@
 <body>
   <header class="header">
     <div class="container nav">
+      <!-- BRAND (sem logo) -->
       <a class="brand" href="#top" data-scroll aria-label="Voltar ao topo">
-        <img src="./img/logo.png" alt="Logo TaylorTech" class="brand-logo" />
         <div class="brand-text">
           <span class="brand-name">Taylor<span>Tech</span></span>
           <span class="brand-sub">web systems</span>
@@ -163,8 +163,37 @@
       </div>
     </section>
 
+    <!-- CARREIRA -->
+    <section id="carreira" class="section">
+      <div class="container">
+        <h2 class="reveal" data-i18n="career_title">Carreira</h2>
+
+        <div class="timeline">
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-box">
+              <strong data-i18n="career_1_title">2026 • Taylor Tech</strong>
+              <p class="muted" data-i18n="career_1_desc">
+                Websites e sistemas web sob medida, identidade verde e preto, foco em experiência e conversão.
+              </p>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-box">
+              <strong data-i18n="career_2_title">Projetos pessoais</strong>
+              <p class="muted" data-i18n="career_2_desc">
+                Portfólios, páginas de serviços, sistemas CRUD, integrações e deploy no GitHub.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- FORMAÇÃO (TIMELINE) -->
-    <section id="formacao" class="section">
+    <section id="formacao" class="section dark">
       <div class="container">
         <h2 class="reveal" data-i18n="edu_title">Formação</h2>
 
@@ -199,18 +228,13 @@
     </section>
 
     <!-- CURSOS -->
-    <section id="cursos" class="section dark">
+    <section id="cursos" class="section">
       <div class="container">
         <h2 class="reveal" data-i18n="courses_title">Cursos & Workshops</h2>
 
         <div class="cards">
           <div class="card reveal">
-            <div class="card-head">
-              <span class="ico" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M4 6l8-4 8 4-8 4-8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M4 10l8 4 8-4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M4 14l8 4 8-4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-              </span>
-              <h3>SENAI</h3>
-            </div>
+            <h3>SENAI</h3>
             <ul class="list">
               <li data-i18n="course_senai_1">Tecnologia da Informação e Comunicação — 14h (2022) — Concluído</li>
               <li data-i18n="course_senai_2">Lógica de Programação — 14h (2022) — Concluído</li>
@@ -218,12 +242,7 @@
           </div>
 
           <div class="card reveal">
-            <div class="card-head">
-              <span class="ico" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 10h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6 21h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-              </span>
-              <h3 data-i18n="course_ws_title">Workshops</h3>
-            </div>
+            <h3 data-i18n="course_ws_title">Workshops</h3>
             <ul class="list">
               <li data-i18n="course_ws_1">Capacitação Profissional — Renees (2022)</li>
               <li data-i18n="course_ws_2">Complementares: Mercado de Trabalho, Desenvolvimento Pessoal, Comportamentais, Elaboração de Currículo</li>
@@ -231,12 +250,7 @@
           </div>
 
           <div class="card reveal">
-            <div class="card-head">
-              <span class="ico" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M4 8h16v10H4V8z" stroke="currentColor" stroke-width="1.8"/><path d="M8 8V6h8v2" stroke="currentColor" stroke-width="1.8"/><path d="M10 12h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-              </span>
-              <h3>IEC Brasil</h3>
-            </div>
+            <h3>IEC Brasil</h3>
             <ul class="list">
               <li data-i18n="course_iec_1">Imersão em Reparo de Smartphones (Software/Hardware) — 40h (2024) — Concluído</li>
             </ul>
@@ -246,7 +260,7 @@
     </section>
 
     <!-- PORTFOLIO -->
-    <section id="portfolio" class="section">
+    <section id="portfolio" class="section dark">
       <div class="container">
         <h2 class="reveal" data-i18n="portfolio_title">Portfólio</h2>
         <div class="cards">
@@ -266,8 +280,8 @@
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section id="servicos" class="section dark">
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section">
       <div class="container">
         <h2 class="reveal" data-i18n="services_title">Serviços</h2>
         <div class="cards">
@@ -287,16 +301,14 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contato" class="section">
+    <!-- CONTATO -->
+    <section id="contato" class="section dark">
       <div class="container">
         <h2 class="reveal" data-i18n="contact_title">Contato</h2>
-
         <div class="contact reveal">
           <a class="btn primary" href="https://wa.me/5581994582007" target="_blank" rel="noreferrer" data-i18n="contact_btn">
             Chamar no WhatsApp
           </a>
-
           <p class="muted small-text" data-i18n="contact_note">
             WhatsApp: wa.me/+5581994582007 • GitHub: TaylorTech2024 • Insta: @taylorzzx_
           </p>

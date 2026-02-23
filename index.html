@@ -13,9 +13,8 @@
   <!-- HEADER -->
   <header class="header">
     <div class="container nav">
-
       <!-- LOGO + NOME -->
-      <a class="brand" href="#top" aria-label="Voltar ao topo">
+      <a class="brand" href="#top" data-scroll aria-label="Voltar ao topo">
         <img src="./img/logo.png" alt="Logo TaylorTech" class="brand-logo" />
         <div class="brand-text">
           <span class="brand-name">Taylor<span>Tech</span></span>
@@ -23,20 +22,23 @@
         </div>
       </a>
 
-      <nav class="menu">
-        <a href="#sobre">Sobre</a>
-        <a href="#carreira">Carreira</a>
-        <a href="#portfolio">Portfólio</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contato" class="btn small">Orçamento</a>
+      <nav class="menu" aria-label="Menu">
+        <a href="#sobre" data-scroll>Sobre</a>
+        <a href="#competencias" data-scroll>Competências</a>
+        <a href="#carreira" data-scroll>Carreira</a>
+        <a href="#formacao" data-scroll>Formação</a>
+        <a href="#cursos" data-scroll>Cursos</a>
+        <a href="#portfolio" data-scroll>Portfólio</a>
+        <a href="#servicos" data-scroll>Serviços</a>
+        <a href="#contato" class="btn small" data-scroll>Orçamento</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
   <main id="top">
+    <!-- HERO -->
     <section class="hero">
-      <div class="container hero-content">
+      <div class="container hero-content reveal">
         <div class="pill">Disponível para projetos • Sites & Sistemas Web</div>
 
         <h2>Herbert Taylor</h2>
@@ -48,8 +50,14 @@
         </p>
 
         <div class="actions">
-          <a href="#portfolio" class="btn primary">Ver portfólio</a>
-          <a href="#contato" class="btn ghost">Falar comigo</a>
+          <a href="#portfolio" class="btn primary" data-scroll>Ver portfólio</a>
+          <a href="#contato" class="btn ghost" data-scroll>Falar comigo</a>
+        </div>
+
+        <div class="mini-stats">
+          <div class="stat reveal"><strong>Web</strong><span>Sites e sistemas</span></div>
+          <div class="stat reveal"><strong>UI</strong><span>Experiência e visual</span></div>
+          <div class="stat reveal"><strong>Deploy</strong><span>GitHub + hospedagem</span></div>
         </div>
       </div>
     </section>
@@ -57,60 +65,212 @@
     <!-- SOBRE -->
     <section id="sobre" class="section">
       <div class="container">
-        <h2>Sobre mim</h2>
-        <p class="muted">
-          Sou Herbert Taylor, programador web focado em desenvolvimento de sites e
-          sistemas web modernos. Trabalho com foco em experiência do usuário, performance
-          e visual profissional.
+        <h2 class="reveal">Sobre mim</h2>
+        <p class="muted reveal">
+          Profissional proativo, com experiência em manutenção de dispositivos eletrônicos e gestão.
+          Fundador da Taylor Tech, com foco em soluções web. Tenho conhecimentos em programação,
+          desenvolvimento web e banco de dados, com compromisso em evolução contínua e resultados.
         </p>
       </div>
     </section>
 
-    <!-- CARREIRA -->
-    <section id="carreira" class="section dark">
+    <!-- COMPETÊNCIAS -->
+    <section id="competencias" class="section dark">
       <div class="container">
-        <h2>Carreira</h2>
+        <h2 class="reveal">Competências (TI & Programação)</h2>
 
-        <ul class="timeline">
-          <li><span>2026</span> Taylor Tech — Websites e Sistemas Web</li>
-          <li><span>ADS</span> Análise e Desenvolvimento de Sistemas</li>
-          <li><span>Projetos</span> Sites, landing pages e sistemas administrativos</li>
-        </ul>
+        <div class="cards">
+          <div class="card reveal">
+            <h3>Stack / Técnicas</h3>
+            <ul class="list">
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>C</li>
+              <li>Java</li>
+              <li>HTML / CSS</li>
+              <li>SQL e gestão de Banco de Dados</li>
+              <li>Git / GitHub</li>
+              <li>React</li>
+              <li>Lógica de programação e resolução de problemas</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Boas práticas</h3>
+            <ul class="list">
+              <li>Responsividade (mobile-first)</li>
+              <li>Organização de código e padrões</li>
+              <li>Integração com WhatsApp / links e CTA</li>
+              <li>SEO básico e performance</li>
+              <li>Deploy com GitHub Pages</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Comportamentais</h3>
+            <ul class="list">
+              <li>Executor, planejador e analista</li>
+              <li>Paciente, organizado e bom ouvinte</li>
+              <li>Trabalho em equipe</li>
+              <li>Metódico, pensa antes de agir</li>
+              <li>Comunicação clara e profissional</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARREIRA -->
+    <section id="carreira" class="section">
+      <div class="container">
+        <h2 class="reveal">Carreira</h2>
+
+        <div class="timeline">
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-box">
+              <strong>2026 • Taylor Tech</strong>
+              <p class="muted">Websites e sistemas web sob medida, identidade verde e preto, foco em experiência e conversão.</p>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-box">
+              <strong>Projetos pessoais</strong>
+              <p class="muted">Portfólios, páginas de serviços, sistemas CRUD, integrações e deploy no GitHub.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao" class="section dark">
+      <div class="container">
+        <h2 class="reveal">Formação</h2>
+
+        <div class="cards">
+          <div class="card reveal">
+            <h3>UNIBRA</h3>
+            <p class="muted">
+              Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (ADS) — <strong>Cursando</strong> (2025).
+            </p>
+          </div>
+
+          <div class="card reveal">
+            <h3>ETE Professor Antônio Carlos Gomes da Costa</h3>
+            <p class="muted">
+              Curso Técnico em Desenvolvimento de Sistemas — <strong>Concluído</strong> (2023/2024).
+            </p>
+          </div>
+
+          <div class="card reveal">
+            <h3>Escola Apolônio Sales</h3>
+            <p class="muted">
+              Ensino Médio — <strong>Concluído</strong> (2024).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURSOS -->
+    <section id="cursos" class="section">
+      <div class="container">
+        <h2 class="reveal">Cursos & Workshops</h2>
+
+        <div class="cards">
+          <div class="card reveal">
+            <h3>SENAI</h3>
+            <ul class="list">
+              <li>Tecnologia da Informação e Comunicação — 14h (2022) — Concluído</li>
+              <li>Lógica de Programação — 14h (2022) — Concluído</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Workshop</h3>
+            <ul class="list">
+              <li>Capacitação Profissional — Renees (2022)</li>
+              <li>Cursos complementares: Introdução ao Mercado de Trabalho, Desenvolvimento Pessoal, Características Comportamentais, Elaboração de Currículo</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>IEC Brasil</h3>
+            <ul class="list">
+              <li>Imersão em Reparo de Smartphones (Software/Hardware) — 40h (2024) — Concluído</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- PORTFÓLIO -->
-    <section id="portfolio" class="section">
+    <section id="portfolio" class="section dark">
       <div class="container">
-        <h2>Portfólio</h2>
+        <h2 class="reveal">Portfólio</h2>
 
         <div class="cards">
-          <div class="card">Site Institucional</div>
-          <div class="card">Landing Page</div>
-          <div class="card">Sistema Web</div>
+          <div class="card reveal">
+            <h3>Site Institucional</h3>
+            <p class="muted">Layout moderno, responsivo, com CTA e presença profissional.</p>
+            <div class="row">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Landing Page</h3>
+            <p class="muted">Página focada em conversão, rápida e com animações suaves.</p>
+            <div class="row">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Sistema Web (CRUD)</h3>
+            <p class="muted">Cadastro, listagem, edição, autenticação e organização de dados.</p>
+            <div class="row">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- SERVIÇOS -->
-    <section id="servicos" class="section dark">
+    <section id="servicos" class="section">
       <div class="container">
-        <h2>Serviços</h2>
+        <h2 class="reveal">Serviços</h2>
 
         <div class="cards">
-          <div class="card">Criação de Websites</div>
-          <div class="card">Sistemas Web</div>
-          <div class="card">Manutenção</div>
+          <div class="card reveal">
+            <h3>Criação de Websites</h3>
+            <p class="muted">Institucional, portfólio, landing page e páginas de serviços.</p>
+          </div>
+          <div class="card reveal">
+            <h3>Sistemas Web</h3>
+            <p class="muted">Painel admin, CRUD, login, integrações e banco de dados.</p>
+          </div>
+          <div class="card reveal">
+            <h3>Manutenção</h3>
+            <p class="muted">Ajustes, melhorias, performance, SEO e correções.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CONTATO -->
-    <section id="contato" class="section">
+    <section id="contato" class="section dark">
       <div class="container">
-        <h2>Contato</h2>
+        <h2 class="reveal">Contato</h2>
 
-        <div class="contact">
+        <div class="contact reveal">
           <a class="btn primary"
              href="https://wa.me/5581994582007"
              target="_blank" rel="noreferrer">
@@ -124,7 +284,6 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="footer">
       <p>© <span id="year"></span> TaylorTech • Herbert Taylor</p>
     </footer>

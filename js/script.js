@@ -2,9 +2,8 @@
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// ======================
 // Reveal on scroll
-// ======================
+
 const revealEls = document.querySelectorAll(".reveal");
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -16,9 +15,8 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.16 });
 revealEls.forEach((el) => revealObserver.observe(el));
 
-// ======================
 // Smooth scroll com offset do header
-// ======================
+
 function easeInOutCubic(t) {
   return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 }
@@ -51,9 +49,8 @@ document.querySelectorAll("a[data-scroll]").forEach((a) => {
   });
 });
 
-// ======================
 // Menu ativo conforme seção
-// ======================
+
 const sections = Array.from(document.querySelectorAll("main section[id]"));
 const menuLinks = Array.from(document.querySelectorAll(".menu a[data-scroll]"));
 function setActive(id) {
@@ -65,9 +62,8 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { threshold: [0.25, 0.35, 0.5, 0.65] });
 sections.forEach((s) => sectionObserver.observe(s));
 
-// ======================
 // PT / EN (FUNCIONANDO)
-// ======================
+
 const i18n = {
   pt: {
     nav_about: "Sobre",
@@ -122,7 +118,7 @@ const i18n = {
     edu_title: "Formação",
     edu_1_title: "UNIBRA",
     edu_1_badge: "Cursando",
-    edu_1_desc: "Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (ADS) — 2025.",
+    edu_1_desc: "Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (ADS) — 2025/2027.",
     edu_2_title: "ETE Prof. Antônio Carlos Gomes da Costa",
     edu_2_badge: "Concluído",
     edu_2_desc: "Curso Técnico em Desenvolvimento de Sistemas — 2023/2024.",
@@ -209,7 +205,7 @@ const i18n = {
     edu_title: "Education",
     edu_1_title: "UNIBRA",
     edu_1_badge: "In progress",
-    edu_1_desc: "Associate Degree in Systems Analysis and Development — 2025.",
+    edu_1_desc: "Associate Degree in Systems Analysis and Development — 2025/2027.",
     edu_2_title: "ETE Prof. Antônio Carlos Gomes da Costa",
     edu_2_badge: "Completed",
     edu_2_desc: "Technical Course in Systems Development — 2023/2024.",
@@ -267,3 +263,40 @@ if (langToggle) {
     applyLang(currentLang);
   });
 }
+
+// ROLE ANIMADO
+
+const roles = {
+  pt: [
+    "Programador Web",
+    "Desenvolvedor Front-end",
+    "Criador de Sites",
+    "Sistemas Web"
+  ],
+  en: [
+    "Web Developer",
+    "Front-end Developer",
+    "Website Builder",
+    "Web Systems"
+  ]
+};
+
+let roleIndex = 0;
+const roleText = document.getElementById("roleText");
+
+function startRoleAnimation(lang = currentLang || "pt") {
+  if (!roleText) return;
+
+  setInterval(() => {
+    roleIndex = (roleIndex + 1) % roles[lang].length;
+    roleText.style.opacity = 0;
+
+    setTimeout(() => {
+      roleText.textContent = roles[lang][roleIndex];
+      roleText.style.opacity = 1;
+    }, 250);
+  }, 2600);
+}
+
+// inicia após carregar
+startRoleAnimation(currentLang || "pt");

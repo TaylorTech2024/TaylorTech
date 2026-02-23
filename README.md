@@ -1,29 +1,45 @@
-# TaylorTech — Portfólio (Web)
+# TaylorTech
 
-Meu portfólio pessoal focado em **programação web** (sites e sistemas).  
-Aqui eu mostro um pouco sobre mim, minhas competências, formação, cursos e alguns projetos.
+Portfólio pessoal focado em **programação web**.  
+Projeto criado para apresentar minha trajetória, formação, competências e alguns trabalhos na área de desenvolvimento de sistemas e websites.
 
-🔗 **Site:** https://taylortech2024.github.io/TaylorTech/
+🔗 **Acesse o site:**  
+https://taylortech2024.github.io/TaylorTech/
 
 ---
 
-## O que tem no site
-- Sessões: Sobre, Competências, Carreira, Formação (timeline), Cursos, Portfólio e Contato
-- Rolagem suave nos links do menu
-- Animações ao rolar a página (reveal)
-- Alternância de idioma **PT/EN**
+## Sobre o projeto
+
+Este site funciona como meu portfólio profissional.  
+A ideia foi criar algo simples, rápido e direto, sem frameworks pesados, priorizando organização de código, performance e experiência do usuário.
+
+O layout é responsivo, com animações leves e navegação suave.
+
+---
+
+## Funcionalidades
+
+- Navegação com rolagem suave
+- Animações ao rolar a página
+- Destaque automático da seção ativa no menu
+- Alternância de idioma **Português / Inglês**
+- Formação exibida em formato timeline
 - Visual escuro com identidade verde (TaylorTech)
 
 ---
 
-## Tecnologias
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+## Tecnologias utilizadas
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (Vanilla)**
+
+Sem bibliotecas externas ou frameworks.
 
 ---
 
 ## Estrutura do projeto
+
 ```txt
 TAYLORTECH/
 ├── index.html
@@ -32,4 +48,3 @@ TAYLORTECH/
 ├── js/
 │   └── script.js
 └── img/
-    └── (imagens, se usar)

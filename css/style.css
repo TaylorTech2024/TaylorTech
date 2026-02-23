@@ -238,3 +238,22 @@ h2{ margin-bottom: 18px; font-size: 32px; }
   .menu{ display:none; }
   .hero{ min-height: 70vh; }
 } 
+/* ROLE ANIMADO */
+.role{
+  color: var(--green);
+  font-size: 20px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cursor{
+  animation: blink 1s infinite;
+  font-weight: 700;
+}
+
+@keyframes blink{
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}

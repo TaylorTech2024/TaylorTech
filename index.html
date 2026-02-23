@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TaylorTech | Programação Web</title>
+  <title>TaylorTech | Web Development</title>
 
   <link rel="stylesheet" href="./css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- HEADER -->
   <header class="header">
     <div class="container nav">
-      <!-- LOGO + NOME -->
       <a class="brand" href="#top" data-scroll aria-label="Voltar ao topo">
         <img src="./img/logo.png" alt="Logo TaylorTech" class="brand-logo" />
         <div class="brand-text">
@@ -23,15 +21,19 @@
       </a>
 
       <nav class="menu" aria-label="Menu">
-        <a href="#sobre" data-scroll>Sobre</a>
-        <a href="#competencias" data-scroll>Competências</a>
-        <a href="#carreira" data-scroll>Carreira</a>
-        <a href="#formacao" data-scroll>Formação</a>
-        <a href="#cursos" data-scroll>Cursos</a>
-        <a href="#portfolio" data-scroll>Portfólio</a>
-        <a href="#servicos" data-scroll>Serviços</a>
-        <a href="#contato" class="btn small" data-scroll>Orçamento</a>
+        <a href="#sobre" data-scroll data-i18n="nav_about">Sobre</a>
+        <a href="#competencias" data-scroll data-i18n="nav_skills">Competências</a>
+        <a href="#carreira" data-scroll data-i18n="nav_career">Carreira</a>
+        <a href="#formacao" data-scroll data-i18n="nav_edu">Formação</a>
+        <a href="#cursos" data-scroll data-i18n="nav_courses">Cursos</a>
+        <a href="#portfolio" data-scroll data-i18n="nav_portfolio">Portfólio</a>
+        <a href="#servicos" data-scroll data-i18n="nav_services">Serviços</a>
+        <a href="#contato" class="btn small" data-scroll data-i18n="nav_quote">Orçamento</a>
       </nav>
+
+      <button class="lang" id="langToggle" type="button" aria-label="Trocar idioma">
+        <span class="lang-pill" id="langLabel">PT</span>
+      </button>
     </div>
   </header>
 
@@ -39,25 +41,51 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container hero-content reveal">
-        <div class="pill">Disponível para projetos • Sites & Sistemas Web</div>
+        <div class="pill" data-i18n="hero_pill">Disponível para projetos • Sites & Sistemas Web</div>
 
-        <h2>Herbert Taylor</h2>
-        <h3>Programador Web</h3>
+        <h2 data-i18n="hero_name">Herbert Taylor</h2>
+        <h3 data-i18n="hero_role">Programador Web</h3>
 
-        <p>
+        <p data-i18n="hero_desc">
           Crio experiências modernas na web: sites rápidos, responsivos e sistemas
           sob medida. Do design ao deploy, com foco em performance e conversão.
         </p>
 
         <div class="actions">
-          <a href="#portfolio" class="btn primary" data-scroll>Ver portfólio</a>
-          <a href="#contato" class="btn ghost" data-scroll>Falar comigo</a>
+          <a href="#portfolio" class="btn primary" data-scroll data-i18n="hero_btn_portfolio">Ver portfólio</a>
+          <a href="#contato" class="btn ghost" data-scroll data-i18n="hero_btn_contact">Falar comigo</a>
         </div>
 
         <div class="mini-stats">
-          <div class="stat reveal"><strong>Web</strong><span>Sites e sistemas</span></div>
-          <div class="stat reveal"><strong>UI</strong><span>Experiência e visual</span></div>
-          <div class="stat reveal"><strong>Deploy</strong><span>GitHub + hospedagem</span></div>
+          <div class="stat reveal">
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h8l-1 8 11-14h-8l0-6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <strong data-i18n="stat1_title">Web</strong>
+              <span data-i18n="stat1_desc">Sites e sistemas</span>
+            </div>
+          </div>
+
+          <div class="stat reveal">
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l1.4 5.2L18 9l-4.6 1.8L12 16l-1.4-5.2L6 9l4.6-1.8L12 2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <strong data-i18n="stat2_title">UI</strong>
+              <span data-i18n="stat2_desc">Experiência e visual</span>
+            </div>
+          </div>
+
+          <div class="stat reveal">
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M14 4c4 0 6 2 6 6-2 7-8 10-12 10-1 0-2-1-2-2 0-4 3-10 10-12z" stroke="currentColor" stroke-width="1.8"/><path d="M8 16l-4 4 6-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M15 9h0" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+            </span>
+            <div>
+              <strong data-i18n="stat3_title">Deploy</strong>
+              <span data-i18n="stat3_desc">GitHub + hospedagem</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -65,8 +93,8 @@
     <!-- SOBRE -->
     <section id="sobre" class="section">
       <div class="container">
-        <h2 class="reveal">Sobre mim</h2>
-        <p class="muted reveal">
+        <h2 class="reveal" data-i18n="about_title">Sobre mim</h2>
+        <p class="muted reveal" data-i18n="about_desc">
           Profissional proativo, com experiência em manutenção de dispositivos eletrônicos e gestão.
           Fundador da Taylor Tech, com foco em soluções web. Tenho conhecimentos em programação,
           desenvolvimento web e banco de dados, com compromisso em evolução contínua e resultados.
@@ -77,202 +105,199 @@
     <!-- COMPETÊNCIAS -->
     <section id="competencias" class="section dark">
       <div class="container">
-        <h2 class="reveal">Competências (TI & Programação)</h2>
+        <h2 class="reveal" data-i18n="skills_title">Competências (TI & Programação)</h2>
 
         <div class="cards">
           <div class="card reveal">
-            <h3>Stack / Técnicas</h3>
+            <div class="card-head">
+              <span class="ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9 18l-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 4l-4 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </span>
+              <h3 data-i18n="skills_tech_title">Stack / Técnicas</h3>
+            </div>
             <ul class="list">
               <li>Python</li>
               <li>JavaScript</li>
               <li>C</li>
               <li>Java</li>
               <li>HTML / CSS</li>
-              <li>SQL e gestão de Banco de Dados</li>
+              <li data-i18n="skills_sql">SQL e gestão de Banco de Dados</li>
               <li>Git / GitHub</li>
               <li>React</li>
-              <li>Lógica de programação e resolução de problemas</li>
+              <li data-i18n="skills_logic">Lógica de programação e resolução de problemas</li>
             </ul>
           </div>
 
           <div class="card reveal">
-            <h3>Boas práticas</h3>
+            <div class="card-head">
+              <span class="ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v7c0 5-3 8-8 9-5-1-8-4-8-9V6l8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              </span>
+              <h3 data-i18n="skills_practices_title">Boas práticas</h3>
+            </div>
             <ul class="list">
-              <li>Responsividade (mobile-first)</li>
-              <li>Organização de código e padrões</li>
-              <li>Integração com WhatsApp / links e CTA</li>
-              <li>SEO básico e performance</li>
-              <li>Deploy com GitHub Pages</li>
+              <li data-i18n="skills_resp">Responsividade (mobile-first)</li>
+              <li data-i18n="skills_patterns">Organização de código e padrões</li>
+              <li data-i18n="skills_cta">Integração com WhatsApp / links e CTA</li>
+              <li data-i18n="skills_seo">SEO básico e performance</li>
+              <li data-i18n="skills_deploy">Deploy com GitHub Pages</li>
             </ul>
           </div>
 
           <div class="card reveal">
-            <h3>Comportamentais</h3>
+            <div class="card-head">
+              <span class="ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M16 11a4 4 0 10-8 0 4 4 0 008 0z" stroke="currentColor" stroke-width="1.8"/><path d="M4 21c1.5-4 14.5-4 16 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </span>
+              <h3 data-i18n="skills_soft_title">Comportamentais</h3>
+            </div>
             <ul class="list">
-              <li>Executor, planejador e analista</li>
-              <li>Paciente, organizado e bom ouvinte</li>
-              <li>Trabalho em equipe</li>
-              <li>Metódico, pensa antes de agir</li>
-              <li>Comunicação clara e profissional</li>
+              <li data-i18n="soft1">Executor, planejador e analista</li>
+              <li data-i18n="soft2">Paciente, organizado e bom ouvinte</li>
+              <li data-i18n="soft3">Trabalho em equipe</li>
+              <li data-i18n="soft4">Metódico, pensa antes de agir</li>
+              <li data-i18n="soft5">Comunicação clara e profissional</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CARREIRA -->
-    <section id="carreira" class="section">
+    <!-- FORMAÇÃO (TIMELINE) -->
+    <section id="formacao" class="section">
       <div class="container">
-        <h2 class="reveal">Carreira</h2>
+        <h2 class="reveal" data-i18n="edu_title">Formação</h2>
 
-        <div class="timeline">
+        <div class="timeline edu">
           <div class="t-item reveal">
             <div class="t-dot"></div>
             <div class="t-box">
-              <strong>2026 • Taylor Tech</strong>
-              <p class="muted">Websites e sistemas web sob medida, identidade verde e preto, foco em experiência e conversão.</p>
+              <div class="t-top">
+                <strong data-i18n="edu_1_title">UNIBRA</strong>
+                <span class="badge" data-i18n="edu_1_badge">Cursando</span>
+              </div>
+              <p class="muted" data-i18n="edu_1_desc">
+                Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (ADS) — 2025.
+              </p>
             </div>
           </div>
 
           <div class="t-item reveal">
             <div class="t-dot"></div>
             <div class="t-box">
-              <strong>Projetos pessoais</strong>
-              <p class="muted">Portfólios, páginas de serviços, sistemas CRUD, integrações e deploy no GitHub.</p>
+              <div class="t-top">
+                <strong data-i18n="edu_2_title">ETE Prof. Antônio Carlos Gomes da Costa</strong>
+                <span class="badge" data-i18n="edu_2_badge">Concluído</span>
+              </div>
+              <p class="muted" data-i18n="edu_2_desc">
+                Curso Técnico em Desenvolvimento de Sistemas — 2023/2024.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- FORMAÇÃO -->
-<section id="formacao" class="section dark">
-  <div class="container">
-    <h2 class="reveal">Formação</h2>
-
-    <div class="cards">
-      <div class="card reveal">
-        <h3>UNIBRA</h3>
-        <p class="muted">
-          Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (ADS) —
-          <strong>Cursando</strong> (2025/2027).
-        </p>
-      </div>
-
-      <div class="card reveal">
-        <h3>ETE Professor Antônio Carlos Gomes da Costa</h3>
-        <p class="muted">
-          Curso Técnico em Desenvolvimento de Sistemas —
-          <strong>Concluído</strong> (2023/2024).
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
 
     <!-- CURSOS -->
-    <section id="cursos" class="section">
+    <section id="cursos" class="section dark">
       <div class="container">
-        <h2 class="reveal">Cursos & Workshops</h2>
+        <h2 class="reveal" data-i18n="courses_title">Cursos & Workshops</h2>
 
         <div class="cards">
           <div class="card reveal">
-            <h3>SENAI</h3>
+            <div class="card-head">
+              <span class="ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 6l8-4 8 4-8 4-8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M4 10l8 4 8-4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M4 14l8 4 8-4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              </span>
+              <h3>SENAI</h3>
+            </div>
             <ul class="list">
-              <li>Tecnologia da Informação e Comunicação — 14h (2022) — Concluído</li>
-              <li>Lógica de Programação — 14h (2022) — Concluído</li>
+              <li data-i18n="course_senai_1">Tecnologia da Informação e Comunicação — 14h (2022) — Concluído</li>
+              <li data-i18n="course_senai_2">Lógica de Programação — 14h (2022) — Concluído</li>
             </ul>
           </div>
 
           <div class="card reveal">
-            <h3>Workshop</h3>
+            <div class="card-head">
+              <span class="ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 10h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6 21h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </span>
+              <h3 data-i18n="course_ws_title">Workshops</h3>
+            </div>
             <ul class="list">
-              <li>Capacitação Profissional — Renees (2022)</li>
-              <li>Cursos complementares: Introdução ao Mercado de Trabalho, Desenvolvimento Pessoal, Características Comportamentais, Elaboração de Currículo</li>
+              <li data-i18n="course_ws_1">Capacitação Profissional — Renees (2022)</li>
+              <li data-i18n="course_ws_2">Complementares: Mercado de Trabalho, Desenvolvimento Pessoal, Comportamentais, Elaboração de Currículo</li>
             </ul>
           </div>
 
           <div class="card reveal">
-            <h3>IEC Brasil</h3>
+            <div class="card-head">
+              <span class="ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 8h16v10H4V8z" stroke="currentColor" stroke-width="1.8"/><path d="M8 8V6h8v2" stroke="currentColor" stroke-width="1.8"/><path d="M10 12h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </span>
+              <h3>IEC Brasil</h3>
+            </div>
             <ul class="list">
-              <li>Imersão em Reparo de Smartphones (Software/Hardware) — 40h (2024) — Concluído</li>
+              <li data-i18n="course_iec_1">Imersão em Reparo de Smartphones (Software/Hardware) — 40h (2024) — Concluído</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PORTFÓLIO -->
-    <section id="portfolio" class="section dark">
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section">
       <div class="container">
-        <h2 class="reveal">Portfólio</h2>
-
+        <h2 class="reveal" data-i18n="portfolio_title">Portfólio</h2>
         <div class="cards">
           <div class="card reveal">
-            <h3>Site Institucional</h3>
-            <p class="muted">Layout moderno, responsivo, com CTA e presença profissional.</p>
-            <div class="row">
-              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
-              <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
-            </div>
+            <h3 data-i18n="p1_title">Site Institucional</h3>
+            <p class="muted" data-i18n="p1_desc">Layout moderno, responsivo, com CTA e presença profissional.</p>
           </div>
-
           <div class="card reveal">
-            <h3>Landing Page</h3>
-            <p class="muted">Página focada em conversão, rápida e com animações suaves.</p>
-            <div class="row">
-              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
-              <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
-            </div>
+            <h3 data-i18n="p2_title">Landing Page</h3>
+            <p class="muted" data-i18n="p2_desc">Página focada em conversão, rápida e com animações suaves.</p>
           </div>
-
           <div class="card reveal">
-            <h3>Sistema Web (CRUD)</h3>
-            <p class="muted">Cadastro, listagem, edição, autenticação e organização de dados.</p>
-            <div class="row">
-              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
-              <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
-            </div>
+            <h3 data-i18n="p3_title">Sistema Web (CRUD)</h3>
+            <p class="muted" data-i18n="p3_desc">Cadastro, listagem, edição, autenticação e organização de dados.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SERVIÇOS -->
-    <section id="servicos" class="section">
+    <!-- SERVICES -->
+    <section id="servicos" class="section dark">
       <div class="container">
-        <h2 class="reveal">Serviços</h2>
-
+        <h2 class="reveal" data-i18n="services_title">Serviços</h2>
         <div class="cards">
           <div class="card reveal">
-            <h3>Criação de Websites</h3>
-            <p class="muted">Institucional, portfólio, landing page e páginas de serviços.</p>
+            <h3 data-i18n="s1_title">Criação de Websites</h3>
+            <p class="muted" data-i18n="s1_desc">Institucional, portfólio, landing page e páginas de serviços.</p>
           </div>
           <div class="card reveal">
-            <h3>Sistemas Web</h3>
-            <p class="muted">Painel admin, CRUD, login, integrações e banco de dados.</p>
+            <h3 data-i18n="s2_title">Sistemas Web</h3>
+            <p class="muted" data-i18n="s2_desc">Painel admin, CRUD, login, integrações e banco de dados.</p>
           </div>
           <div class="card reveal">
-            <h3>Manutenção</h3>
-            <p class="muted">Ajustes, melhorias, performance, SEO e correções.</p>
+            <h3 data-i18n="s3_title">Manutenção</h3>
+            <p class="muted" data-i18n="s3_desc">Ajustes, melhorias, performance, SEO e correções.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTATO -->
-    <section id="contato" class="section dark">
+    <!-- CONTACT -->
+    <section id="contato" class="section">
       <div class="container">
-        <h2 class="reveal">Contato</h2>
+        <h2 class="reveal" data-i18n="contact_title">Contato</h2>
 
         <div class="contact reveal">
-          <a class="btn primary"
-             href="https://wa.me/5581994582007"
-             target="_blank" rel="noreferrer">
+          <a class="btn primary" href="https://wa.me/5581994582007" target="_blank" rel="noreferrer" data-i18n="contact_btn">
             Chamar no WhatsApp
           </a>
 
-          <p class="muted small-text">
+          <p class="muted small-text" data-i18n="contact_note">
             WhatsApp: wa.me/+5581994582007 • GitHub: TaylorTech2024 • Insta: @taylorzzx_
           </p>
         </div>

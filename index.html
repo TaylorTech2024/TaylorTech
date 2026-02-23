@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Herbert Taylor | Programador Web</title>
+  <meta name="description" content="Portfólio pessoal de Herbert Taylor — Programador Web. Sites, sistemas web e soluções sob medida." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- BACKGROUND -->
+  <div class="bg">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="noise"></div>
+  </div>
+
+  <!-- TOP BAR -->
+  <header class="topbar" id="top">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top" aria-label="Voltar ao topo">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-name">Taylor Tech</span>
+        <span class="brand-sub">web systems</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#carreira" class="nav-link">Carreira</a>
+          <a href="#portfolio" class="nav-link">Portfólio</a>
+          <a href="#servicos" class="nav-link">Serviços</a>
+          <a href="#contato" class="nav-link">Contato</a>
+          <a href="#contato" class="nav-cta">Orçamento</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero section" aria-label="Apresentação">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="pill reveal">
+            <span class="ping"></span>
+            <span>Disponível para projetos • Sites & Sistemas Web</span>
+          </div>
+
+          <h1 class="title reveal">
+            Herbert Taylor
+            <span class="title-accent">Programador Web</span>
+          </h1>
+
+          <p class="lead reveal">
+            Eu crio experiências modernas na web: páginas rápidas, responsivas e sistemas sob medida.
+            Do design ao deploy — tudo com foco em performance, clareza e conversão.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="btn primary" href="#portfolio">Ver portfólio</a>
+            <a class="btn ghost" href="#contato">Falar comigo</a>
+          </div>
+
+          <div class="hero-stats reveal">
+            <div class="stat">
+              <div class="stat-num" data-count="15">0</div>
+              <div class="stat-label">projetos publicados</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-count="4">0</div>
+              <div class="stat-label">anos estudando & criando</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-count="100">0</div>
+              <div class="stat-label">% foco em qualidade</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right reveal">
+          <div class="card glass">
+            <div class="card-top">
+              <div class="avatar" aria-hidden="true">
+                <div class="avatar-ring"></div>
+                <div class="avatar-core"></div>
+              </div>
+              <div class="card-title">
+                <h2>Stack de trabalho</h2>
+                <p>Front + Back + Deploy</p>
+              </div>
+            </div>
+
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">React</span>
+              <span class="chip">Node</span>
+              <span class="chip">API REST</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Git/GitHub</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="mini">
+              <div class="mini-item">
+                <span class="mini-dot"></span>
+                <div>
+                  <strong>Sites rápidos</strong>
+                  <p>Lighthouse, SEO e acessibilidade.</p>
+                </div>
+              </div>
+              <div class="mini-item">
+                <span class="mini-dot"></span>
+                <div>
+                  <strong>Sistemas web</strong>
+                  <p>Painéis, CRUD, autenticação.</p>
+                </div>
+              </div>
+              <div class="mini-item">
+                <span class="mini-dot"></span>
+                <div>
+                  <strong>Entrega completa</strong>
+                  <p>Domínio, deploy e suporte.</p>
+                </div>
+              </div>
+            </div>
+
+            <a class="btn small" href="#contato">Vamos conversar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <div class="mouse"></div>
+        <span>role</span>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Sobre mim</h2>
+          <p>Minha pegada é construir produtos web bonitos, rápidos e fáceis de usar.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card glass reveal">
+            <h3>Quem eu sou</h3>
+            <p>
+              Sou o Herbert Taylor, programador web focado em desenvolvimento de websites e sistemas.
+              Curto interfaces limpas, animações suaves e projetos com propósito.
+            </p>
+            <p class="muted">
+              Atualmente toco a Taylor Tech, unindo identidade forte (preto + verde) com entregas modernas na web.
+            </p>
+          </div>
+
+          <div class="card glass reveal">
+            <h3>O que eu entrego</h3>
+            <ul class="list">
+              <li><span class="check">✓</span> Landing pages que convertem</li>
+              <li><span class="check">✓</span> Portfólios e sites institucionais</li>
+              <li><span class="check">✓</span> Sistemas web com login e painel</li>
+              <li><span class="check">✓</span> Integração com WhatsApp, APIs e banco</li>
+              <li><span class="check">✓</span> Deploy e manutenção</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARREIRA -->
+    <section class="section" id="carreira">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Carreira</h2>
+          <p>Linha do tempo simples — você pode trocar as datas e itens depois.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-card glass">
+              <div class="t-top">
+                <strong>2026 • Taylor Tech</strong>
+                <span class="badge">Atual</span>
+              </div>
+              <p>Foco em websites e sistemas web sob medida, com identidade visual verde e preto.</p>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-card glass">
+              <div class="t-top">
+                <strong>ADS • Análise e Desenvolvimento de Sistemas</strong>
+                <span class="badge">Formação</span>
+              </div>
+              <p>Banco de dados, lógica, engenharia de software, web e projetos práticos.</p>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-card glass">
+              <div class="t-top">
+                <strong>Projetos pessoais</strong>
+                <span class="badge">Portfólio</span>
+              </div>
+              <p>Sites responsivos, páginas de venda, painéis administrativos e integrações.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Portfólio</h2>
+          <p>Coloque aqui seus melhores trabalhos. Já deixei 6 cards prontos.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project glass reveal">
+            <div class="project-top">
+              <h3>Site institucional</h3>
+              <span class="tag">HTML/CSS/JS</span>
+            </div>
+            <p>Layout moderno, responsivo, com animações suaves e CTA para WhatsApp.</p>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </article>
+
+          <article class="project glass reveal">
+            <div class="project-top">
+              <h3>Página de serviços</h3>
+              <span class="tag">UI/UX</span>
+            </div>
+            <p>Seções bem organizadas, foco em conversão e leitura rápida.</p>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </article>
+
+          <article class="project glass reveal">
+            <div class="project-top">
+              <h3>Sistema web (CRUD)</h3>
+              <span class="tag">Fullstack</span>
+            </div>
+            <p>Cadastro, listagem, edição e autenticação com boas práticas.</p>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </article>
+
+          <article class="project glass reveal">
+            <div class="project-top">
+              <h3>Landing page</h3>
+              <span class="tag">Performance</span>
+            </div>
+            <p>Carregamento rápido, SEO básico, copy objetiva e CTA destacado.</p>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </article>
+
+          <article class="project glass reveal">
+            <div class="project-top">
+              <h3>Dashboard</h3>
+              <span class="tag">Charts</span>
+            </div>
+            <p>Painel com KPIs, tabelas e filtros (perfeito para sistemas web).</p>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </article>
+
+          <article class="project glass reveal">
+            <div class="project-top">
+              <h3>Portfólio pessoal</h3>
+              <span class="tag">Brand</span>
+            </div>
+            <p>Identidade consistente, efeitos elegantes e narrativa profissional.</p>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="center reveal">
+          <a class="btn ghost" href="#contato">Quer um projeto nesse nível? Bora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Serviços</h2>
+          <p>Para empresas e pessoas que querem presença forte na internet.</p>
+        </div>
+
+        <div class="services">
+          <div class="service glass reveal">
+            <h3>Website</h3>
+            <p>Institucional, portfólio, landing page, vitrine e páginas de campanha.</p>
+          </div>
+          <div class="service glass reveal">
+            <h3>Sistema Web</h3>
+            <p>Login, painel admin, CRUD, permissões, integrações e banco de dados.</p>
+          </div>
+          <div class="service glass reveal">
+            <h3>Manutenção</h3>
+            <p>Ajustes, melhorias, performance, SEO e correção de bugs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Contato</h2>
+          <p>Me chama no WhatsApp e já manda: tipo de site/sistema + prazo + referências.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card glass reveal">
+            <h3>Vamos fechar teu orçamento</h3>
+            <p class="muted">Atendimento rápido, objetivo e sem enrolação.</p>
+
+            <div class="contact-box">
+              <div class="contact-row">
+                <span class="label">WhatsApp</span>
+                <a class="value" href="https://wa.me/5581994582007" target="_blank" rel="noreferrer">
+                  wa.me/+5581994582007
+                </a>
+              </div>
+
+              <div class="contact-row">
+                <span class="label">Instagram</span>
+                <a class="value" href="https://instagram.com/taylorzzx_" target="_blank" rel="noreferrer">
+                  @taylorzzx_
+                </a>
+              </div>
+
+              <div class="contact-row">
+                <span class="label">GitHub</span>
+                <a class="value" href="https://github.com/TaylorTech2024" target="_blank" rel="noreferrer">
+                  github.com/TaylorTech2024
+                </a>
+              </div>
+            </div>
+
+            <a class="btn primary" href="https://wa.me/5581994582007?text=Oi%20Herbert!%20Quero%20um%20or%C3%A7amento%20de%20site/sistema.%20Meu%20objetivo%20%C3%A9:%20___%20.%20Prazo:%20___%20.%20Refer%C3%AAncias:%20___"
+               target="_blank" rel="noreferrer">
+              Chamar no WhatsApp
+            </a>
+          </div>
+
+          <form class="card glass reveal" onsubmit="return false;">
+            <h3>Briefing rápido</h3>
+            <p class="muted">Preenche e eu já te retorno (abre o WhatsApp com a mensagem pronta).</p>
+
+            <div class="fields">
+              <label>
+                <span>Nome</span>
+                <input id="fNome" type="text" placeholder="Seu nome" autocomplete="name" />
+              </label>
+
+              <label>
+                <span>O que você precisa?</span>
+                <select id="fTipo">
+                  <option value="Website">Website</option>
+                  <option value="Landing Page">Landing Page</option>
+                  <option value="Sistema Web">Sistema Web</option>
+                  <option value="Manutenção">Manutenção</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Detalhes</span>
+                <textarea id="fDetalhes" rows="4" placeholder="Ex.: site para minha loja, com catálogo e botão de WhatsApp..."></textarea>
+              </label>
+
+              <label>
+                <span>Prazo</span>
+                <input id="fPrazo" type="text" placeholder="Ex.: 7 dias / 15 dias / sem pressa" />
+              </label>
+
+              <button class="btn ghost" id="btnEnviar">Gerar mensagem no WhatsApp</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Herbert Taylor • Taylor Tech</p>
+        <a class="to-top" href="#top">Voltar ao topo ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- WHATS FLOAT -->
+  <a class="whats-float" href="https://wa.me/5581994582007" target="_blank" rel="noreferrer" aria-label="Chamar no WhatsApp">
+    <span class="whats-icon" aria-hidden="true"></span>
+    <span class="whats-text">WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

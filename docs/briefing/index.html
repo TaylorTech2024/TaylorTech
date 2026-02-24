@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Briefing | TaylorTech</title>
+
   <meta name="description" content="Briefing do projeto TaylorTech. Preencha após a compra." />
   <meta name="theme-color" content="#0b0b0b" />
 
@@ -11,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
+  <!-- GitHub Pages publica /docs, então aqui usamos caminho relativo -->
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 
@@ -29,7 +31,7 @@
         <a href="../planos/" class="btn small">Planos</a>
       </nav>
 
-      <button class="lang" id="langToggle" type="button">
+      <button class="lang" id="langToggle" type="button" aria-label="Trocar idioma">
         <span class="lang-pill" id="langLabel">PT</span>
       </button>
 
@@ -38,7 +40,7 @@
       </button>
     </div>
 
-    <div class="mobile" id="mobileMenu">
+    <div class="mobile" id="mobileMenu" aria-label="Menu mobile">
       <a href="../">Home</a>
       <a href="../planos/">Planos</a>
     </div>
@@ -54,44 +56,55 @@
           Seu código de atendimento: <strong id="orderId">TT-0000</strong>
         </div>
 
-        <form class="form reveal" data-briefing>
+        <!-- ✅ FORMSPREE: envia para taylortech2024@gmail.com -->
+        <form
+          class="form reveal"
+          action="https://formspree.io/f/mgolrywj"
+          method="POST"
+        >
+          <!-- Configurações do Formspree -->
+          <input type="hidden" name="_subject" value="📩 Novo Briefing — TaylorTech">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+
+          <!-- Para aparecer no e-mail -->
+          <input type="hidden" name="Código de atendimento" id="orderIdHidden" value="TT-0000">
+
           <div class="row-2">
-            <input class="input" type="text" name="nome" placeholder="Seu nome" required>
-            <input class="input" type="email" name="email" placeholder="Seu e-mail" required>
+            <input class="input" type="text" name="Nome" placeholder="Seu nome" required>
+            <input class="input" type="email" name="Email" placeholder="Seu e-mail" required>
           </div>
 
           <div class="row-2">
-            <input class="input" type="text" name="whatsapp" placeholder="WhatsApp (com DDD)" required>
-            <select class="input" name="plano" required>
+            <input class="input" type="text" name="WhatsApp" placeholder="WhatsApp (com DDD)" required>
+
+            <select class="input" name="Plano comprado" required>
               <option value="" selected disabled>Qual plano você comprou?</option>
               <option>Site Básico Profissional</option>
               <option>Site Profissional Completo</option>
               <option>Site Premium Personalizado</option>
               <option>Manutenção Mensal</option>
+              <option>Sistema Web (sob orçamento)</option>
             </select>
           </div>
 
-          <input class="input" type="text" name="empresa" placeholder="Nome da empresa / projeto (se tiver)">
+          <input class="input" type="text" name="Empresa/Projeto" placeholder="Nome da empresa / projeto (se tiver)">
 
-          <textarea class="input" name="descricao" placeholder="Descreva seu projeto (objetivo, público, o que precisa...)" required></textarea>
+          <textarea class="input" name="Descrição do projeto" placeholder="Descreva seu projeto (objetivo, público, o que precisa...)" required></textarea>
 
-          <textarea class="input" name="paginas" placeholder="Quais páginas/seções? (Home, Sobre, Serviços, Contato...)"></textarea>
+          <textarea class="input" name="Páginas/Seções" placeholder="Quais páginas/seções? (Home, Sobre, Serviços, Contato...)"></textarea>
 
           <div class="row-2">
-            <input class="input" type="text" name="cores" placeholder="Cores desejadas (ex: preto e verde)">
-            <input class="input" type="text" name="referencias" placeholder="Sites de referência (cole links)">
+            <input class="input" type="text" name="Cores desejadas" placeholder="Cores desejadas (ex: preto e verde)">
+            <input class="input" type="text" name="Referências" placeholder="Sites de referência (cole links)">
           </div>
 
-          <textarea class="input" name="conteudos" placeholder="Você já tem textos e imagens? (sim/não) e como vai enviar?"></textarea>
+          <textarea class="input" name="Conteúdos" placeholder="Você já tem textos e imagens? (sim/não) e como vai enviar?"></textarea>
 
           <button class="btn primary" type="submit">Enviar briefing</button>
 
           <p class="muted small-text">Depois de enviar, eu entro em contato para confirmar prazo e início.</p>
         </form>
-
-        <div class="note" id="doneBox" style="display:none;margin-top:14px">
-          ✅ Briefing enviado! Agora é só aguardar meu contato no WhatsApp.
-        </div>
 
         <div class="callout" style="margin-top:18px">
           <div>
@@ -108,7 +121,23 @@
     <p>© <span id="year"></span> TaylorTech</p>
   </footer>
 
-  <script src="../js/briefing.js" defer></script>
+  <!-- Script geral (menu, ano, idioma, animações) -->
   <script src="../js/script.js" defer></script>
+
+  <!-- Gerar código TT-XXXX e colocar no hidden para ir no e-mail -->
+  <script>
+    (function () {
+      const year = document.getElementById("year");
+      if (year) year.textContent = new Date().getFullYear();
+
+      // gera um código simples
+      const code = "TT-" + Math.random().toString(16).slice(2, 8).toUpperCase() + "-" + (Date.now() % 10000).toString().padStart(4, "0");
+
+      const orderId = document.getElementById("orderId");
+      const hidden = document.getElementById("orderIdHidden");
+      if (orderId) orderId.textContent = code;
+      if (hidden) hidden.value = code;
+    })();
+  </script>
 </body>
 </html>

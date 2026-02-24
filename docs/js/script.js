@@ -141,7 +141,6 @@ const i18n = {
     contact_title:"Contato", contact_btn:"Chamar no WhatsApp", contact_briefing:"Já comprei • Preencher briefing",
     contact_note:"GitHub: TaylorTech2024 • Insta: @taylorzzx_",
 
-    // Loja
     shop_title:"Loja de Serviços",
     shop_subtitle:"Escolha o plano ideal. Após a compra, preencha o briefing para iniciar seu projeto.",
     hosting_note:"Domínio e hospedagem são contratados pelo cliente. Eu ajudo na configuração.",

@@ -1,217 +1,267 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-lang="pt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>TaylorTech | Web Developer</title>
 
   <meta name="description" content="TaylorTech — Portfólio e serviços de desenvolvimento web. Sites rápidos, responsivos e sistemas sob medida." />
   <meta name="theme-color" content="#0b0b0b" />
 
-  <!-- CSS (fora do docs) -->
-  <link rel="stylesheet" href="../css/style.css" />
-
-  <!-- Fonte -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-
-<header class="header">
-  <div class="container nav">
-    <a class="brand" href="#top">
-      <span class="brand-name">Taylor<span>Tech</span></span>
-      <span class="brand-sub">web systems</span>
-    </a>
-
-    <nav class="menu">
-      <a href="#sobre">Sobre</a>
-      <a href="#competencias">Competências</a>
-      <a href="#formacao">Formação</a>
-      <a href="#cursos">Cursos</a>
-      <a href="#portfolio">Portfólio</a>
-      <a href="../planos/">Loja</a>
-      <a href="#contato" class="btn small">Orçamento</a>
-    </nav>
-  </div>
-</header>
-
-<main id="top">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <div class="pill">Disponível para projetos • Sites & Sistemas Web</div>
-
-      <h1>Herbert Taylor</h1>
-
-      <h2 class="role">
-        <span id="roleText">Programador Web</span>
-        <span class="cursor">|</span>
-      </h2>
-
-      <p class="muted">
-        Crio experiências modernas na web: sites rápidos, responsivos e sistemas sob medida.
-        Do design ao deploy, com foco em performance e conversão.
-      </p>
-
-      <div class="actions">
-        <a href="../planos/" class="btn primary">Ver planos</a>
-        <a href="#contato" class="btn ghost">Falar comigo</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SOBRE -->
-  <section id="sobre" class="section">
-    <div class="container">
-      <h2>Sobre mim</h2>
-      <p class="muted">
-        Profissional focado em desenvolvimento web, com experiência em programação,
-        criação de sites profissionais e sistemas web. Fundador da TaylorTech.
-      </p>
-    </div>
-  </section>
-
-  <!-- COMPETÊNCIAS -->
-  <section id="competencias" class="section dark">
-    <div class="container">
-      <h2>Competências</h2>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Stack</h3>
-          <ul class="list">
-            <li>HTML / CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>C / Java</li>
-            <li>SQL</li>
-            <li>Git / GitHub</li>
-            <li>React</li>
-          </ul>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#top" data-scroll aria-label="Voltar ao topo">
+        <div class="brand-text">
+          <span class="brand-name">Taylor<span>Tech</span></span>
+          <span class="brand-sub">web systems</span>
         </div>
-
-        <div class="card">
-          <h3>Boas práticas</h3>
-          <ul class="list">
-            <li>Responsividade</li>
-            <li>SEO básico</li>
-            <li>Performance</li>
-            <li>Organização de código</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Perfil</h3>
-          <ul class="list">
-            <li>Organizado</li>
-            <li>Comunicativo</li>
-            <li>Foco em resultados</li>
-            <li>Aprendizado contínuo</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FORMAÇÃO -->
-  <section id="formacao" class="section">
-    <div class="container">
-      <h2>Formação</h2>
-
-      <div class="timeline">
-        <div class="t-item">
-          <div class="t-dot"></div>
-          <div class="t-box">
-            <strong>UNIBRA</strong>
-            <p class="muted">Análise e Desenvolvimento de Sistemas — 2025/2027</p>
-          </div>
-        </div>
-
-        <div class="t-item">
-          <div class="t-dot"></div>
-          <div class="t-box">
-            <strong>ETE Prof. Antônio Carlos Gomes da Costa</strong>
-            <p class="muted">Técnico em Desenvolvimento de Sistemas — 2023/2024</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CURSOS -->
-  <section id="cursos" class="section dark">
-    <div class="container">
-      <h2>Cursos & Workshops</h2>
-
-      <div class="cards">
-        <div class="card">
-          <h3>SENAI</h3>
-          <ul class="list">
-            <li>TIC — 14h (2022)</li>
-            <li>Lógica de Programação — 14h (2022)</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>IEC Brasil</h3>
-          <ul class="list">
-            <li>Imersão em Reparo de Smartphones — 40h (2024)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PORTFÓLIO -->
-  <section id="portfolio" class="section">
-    <div class="container">
-      <h2>Portfólio</h2>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Site Institucional</h3>
-          <p class="muted">Layout moderno e responsivo</p>
-        </div>
-
-        <div class="card">
-          <h3>Landing Page</h3>
-          <p class="muted">Foco em conversão</p>
-        </div>
-
-        <div class="card">
-          <h3>Sistema Web</h3>
-          <p class="muted">CRUD, login e banco de dados</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section id="contato" class="section">
-    <div class="container">
-      <h2>Contato</h2>
-      <a class="btn primary" href="https://wa.me/5581994582007" target="_blank">
-        Falar no WhatsApp
       </a>
-      <p class="muted small">
-        GitHub: TaylorTech2024 • Instagram: @taylorzzx_
-      </p>
+
+      <nav class="menu" aria-label="Menu">
+        <a href="#sobre" data-scroll data-i18n="nav_about">Sobre</a>
+        <a href="#competencias" data-scroll data-i18n="nav_skills">Competências</a>
+        <a href="#formacao" data-scroll data-i18n="nav_edu">Formação</a>
+        <a href="#cursos" data-scroll data-i18n="nav_courses">Cursos</a>
+        <a href="#portfolio" data-scroll data-i18n="nav_portfolio">Portfólio</a>
+        <a href="./planos/" data-i18n="nav_shop">Loja</a>
+        <a href="#contato" class="btn small" data-scroll data-i18n="nav_quote">Orçamento</a>
+      </nav>
+
+      <button class="lang" id="langToggle" type="button" aria-label="Trocar idioma">
+        <span class="lang-pill" id="langLabel">PT</span>
+      </button>
+
+      <button class="hamb" id="hamb" type="button" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </section>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> TaylorTech • Herbert Taylor</p>
-  </footer>
+    <div class="mobile" id="mobileMenu" aria-label="Menu mobile">
+      <a href="#sobre" data-scroll data-i18n="nav_about">Sobre</a>
+      <a href="#competencias" data-scroll data-i18n="nav_skills">Competências</a>
+      <a href="#formacao" data-scroll data-i18n="nav_edu">Formação</a>
+      <a href="#cursos" data-scroll data-i18n="nav_courses">Cursos</a>
+      <a href="#portfolio" data-scroll data-i18n="nav_portfolio">Portfólio</a>
+      <a href="./planos/" data-i18n="nav_shop">Loja</a>
+      <a href="#contato" data-scroll data-i18n="nav_quote">Orçamento</a>
+    </div>
+  </header>
 
-</main>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="pill reveal" data-i18n="hero_pill">Disponível para projetos • Sites & Sistemas Web</div>
 
-<!-- JS (fora do docs) -->
-<script src="../js/script.js" defer></script>
+        <h1 class="hero-title reveal" data-i18n="hero_name">Herbert Taylor</h1>
 
+        <h2 class="role reveal">
+          <span id="roleText">Programador Web</span>
+          <span class="cursor">|</span>
+        </h2>
+
+        <p class="hero-desc reveal" data-i18n="hero_desc">
+          Crio experiências modernas na web: sites rápidos, responsivos e sistemas sob medida.
+          Do design ao deploy, com foco em performance e conversão.
+        </p>
+
+        <div class="actions reveal">
+          <a href="./planos/" class="btn primary" data-i18n="hero_btn_shop">Ver planos</a>
+          <a href="#contato" class="btn ghost" data-scroll data-i18n="hero_btn_contact">Falar comigo</a>
+        </div>
+
+        <div class="mini-stats">
+          <div class="stat reveal">
+            <strong>Web</strong><span data-i18n="stat1_desc">Sites e sistemas</span>
+          </div>
+          <div class="stat reveal">
+            <strong>UI</strong><span data-i18n="stat2_desc">Experiência e visual</span>
+          </div>
+          <div class="stat reveal">
+            <strong>Deploy</strong><span data-i18n="stat3_desc">GitHub + hospedagem</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2 class="reveal" data-i18n="about_title">Sobre mim</h2>
+        <p class="muted reveal" data-i18n="about_desc">
+          Profissional de TI e programação, focado em desenvolvimento web. Fundador da TaylorTech, atuo criando sites e sistemas
+          com organização, performance e visual profissional.
+        </p>
+      </div>
+    </section>
+
+    <section id="competencias" class="section dark">
+      <div class="container">
+        <h2 class="reveal" data-i18n="skills_title">Competências (TI & Programação)</h2>
+
+        <div class="cards">
+          <div class="card reveal">
+            <h3 data-i18n="skills_tech_title">Stack / Técnicas</h3>
+            <ul class="list">
+              <li>HTML / CSS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>C</li>
+              <li>Java</li>
+              <li>SQL</li>
+              <li>Git / GitHub</li>
+              <li>React</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3 data-i18n="skills_practices_title">Boas práticas</h3>
+            <ul class="list">
+              <li data-i18n="skills_resp">Responsividade (mobile-first)</li>
+              <li data-i18n="skills_patterns">Organização de código</li>
+              <li data-i18n="skills_seo">SEO básico + performance</li>
+              <li data-i18n="skills_deploy">Deploy GitHub Pages / Vercel</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3 data-i18n="skills_soft_title">Comportamentais</h3>
+            <ul class="list">
+              <li>Organizado</li>
+              <li>Comunicação clara</li>
+              <li>Foco em resultado</li>
+              <li>Aprendizado contínuo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacao" class="section">
+      <div class="container">
+        <h2 class="reveal" data-i18n="edu_title">Formação</h2>
+
+        <div class="timeline">
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-box">
+              <div class="t-top">
+                <strong>UNIBRA</strong>
+                <span class="badge" data-i18n="edu_now">Cursando</span>
+              </div>
+              <p class="muted" data-i18n="edu_1_desc">Análise e Desenvolvimento de Sistemas (ADS) — 2025/2027.</p>
+            </div>
+          </div>
+
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-box">
+              <div class="t-top">
+                <strong>ETE Prof. Antônio Carlos Gomes da Costa</strong>
+                <span class="badge">Concluído</span>
+              </div>
+              <p class="muted" data-i18n="edu_2_desc">Técnico em Desenvolvimento de Sistemas — 2023/2024.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cursos" class="section dark">
+      <div class="container">
+        <h2 class="reveal" data-i18n="courses_title">Cursos & Workshops</h2>
+
+        <div class="cards">
+          <div class="card reveal">
+            <h3>SENAI</h3>
+            <ul class="list">
+              <li data-i18n="course_senai_1">Tecnologia da Informação e Comunicação — 14h (2022) — Concluído</li>
+              <li data-i18n="course_senai_2">Lógica de Programação — 14h (2022) — Concluído</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>IEC Brasil</h3>
+            <ul class="list">
+              <li data-i18n="course_iec_1">Imersão em Reparo de Smartphones (Software/Hardware) — 40h (2024) — Concluído</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3 data-i18n="course_ws_title">Workshops</h3>
+            <ul class="list">
+              <li data-i18n="course_ws_1">Capacitação Profissional — Renees (2022)</li>
+              <li data-i18n="course_ws_2">Complementares: Mercado de Trabalho, Desenvolvimento Pessoal, Comportamentais, Currículo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2 class="reveal" data-i18n="portfolio_title">Portfólio</h2>
+        <p class="muted reveal" data-i18n="portfolio_sub">
+          Alguns exemplos do que eu faço. Em breve vou adicionar links reais dos projetos.
+        </p>
+
+        <div class="cards">
+          <div class="card reveal">
+            <h3 data-i18n="p1_title">Site Institucional</h3>
+            <p class="muted" data-i18n="p1_desc">Layout moderno, responsivo, com CTA e presença profissional.</p>
+          </div>
+          <div class="card reveal">
+            <h3 data-i18n="p2_title">Landing Page</h3>
+            <p class="muted" data-i18n="p2_desc">Página focada em conversão, rápida e com animações suaves.</p>
+          </div>
+          <div class="card reveal">
+            <h3 data-i18n="p3_title">Sistema Web (CRUD)</h3>
+            <p class="muted" data-i18n="p3_desc">Cadastro, listagem, edição, autenticação e organização de dados.</p>
+          </div>
+        </div>
+
+        <div class="callout reveal">
+          <div>
+            <strong data-i18n="cta_title">Quer um site assim?</strong>
+            <p class="muted" data-i18n="cta_desc">Veja os planos e comece hoje. Domínio e hospedagem ficam por conta do cliente.</p>
+          </div>
+          <a class="btn primary" href="./planos/" data-i18n="cta_btn">Ir para a loja</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <h2 class="reveal" data-i18n="contact_title">Contato</h2>
+
+        <div class="contact reveal">
+          <a class="btn primary" href="https://wa.me/5581994582007" target="_blank" rel="noreferrer" data-i18n="contact_btn">
+            Chamar no WhatsApp
+          </a>
+          <a class="btn ghost" href="./briefing/" data-i18n="contact_briefing">Já comprei • Preencher briefing</a>
+
+          <p class="muted small-text" data-i18n="contact_note">
+            GitHub: TaylorTech2024 • Insta: @taylorzzx_
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> TaylorTech • Herbert Taylor</p>
+    </footer>
+  </main>
+
+  <a class="float-wpp" href="https://wa.me/5581994582007" target="_blank" aria-label="WhatsApp">
+    <span>Whats</span>
+  </a>
+
+  <script src="./js/script.js" defer></script>
 </body>
 </html>

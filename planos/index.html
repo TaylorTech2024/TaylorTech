@@ -1,138 +1,191 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-lang="pt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Planos | TaylorTech</title>
-  <meta name="description" content="Planos de sites e serviços TaylorTech. Escolha e compre pelo checkout da Kiwify." />
+  <meta name="description" content="Loja de serviços TaylorTech. Escolha um plano e compre pelo checkout da Kiwify." />
   <meta name="theme-color" content="#0b0b0b" />
-  <link rel="stylesheet" href="../css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
+
 <body>
-
-<header class="header">
-  <div class="container nav">
-    <a class="brand" href="../raiz/" aria-label="Voltar para o site">
-      <span class="name">Taylor<span>Tech</span></span>
-      <span class="sub">planos</span>
-    </a>
-
-    <div class="menu" aria-label="Atalhos">
-      <a href="../raiz/" class="btn small ghost">Voltar</a>
-      <a href="../briefing/" class="btn small">Já comprei</a>
-    </div>
-  </div>
-</header>
-
-<section class="section dark">
-  <div class="container">
-    <h1 class="reveal">Planos de Sites</h1>
-    <p class="muted reveal">
-      Domínio e hospedagem são por conta do cliente. Eu ajudo na configuração.
-    </p>
-
-    <div class="pricing">
-
-      <article class="price-card reveal">
-        <span class="tag">Entrada</span>
-        <h3>Site Básico Profissional</h3>
-        <div class="price"><span class="currency">R$</span><span class="value">350</span></div>
-        <ul class="checks">
-          <li>1 página (Home) com seções essenciais</li>
-          <li>Responsivo (celular/PC)</li>
-          <li>Botão WhatsApp + CTA</li>
-          <li>Publicação do site</li>
-          <li>Prazo: 5 dias úteis</li>
-        </ul>
-        <div class="price-actions">
-          <a class="btn primary" href="https://pay.kiwify.com.br/CRa9R2d" target="_blank" rel="noreferrer">Comprar agora</a>
-          <a class="btn ghost" href="#" data-plan="basic" data-wpp>Tirar dúvidas</a>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="../" aria-label="Voltar para a home">
+        <div class="brand-text">
+          <span class="brand-name">Taylor<span>Tech</span></span>
+          <span class="brand-sub">planos</span>
         </div>
-      </article>
+      </a>
 
-      <article class="price-card featured reveal">
-        <div class="badge-top">Mais vendido</div>
-        <span class="tag">Recomendado</span>
-        <h3>Site Profissional Completo</h3>
-        <div class="price"><span class="currency">R$</span><span class="value">650</span></div>
-        <ul class="checks">
-          <li>Até 4 páginas (Home, Sobre, Serviços, Contato)</li>
-          <li>Animações suaves + rolagem premium</li>
-          <li>Formulário + WhatsApp</li>
-          <li>SEO básico</li>
-          <li>Prazo: 7–10 dias úteis</li>
-        </ul>
-        <div class="price-actions">
-          <a class="btn primary" href="https://pay.kiwify.com.br/ipEGbsi" target="_blank" rel="noreferrer">Comprar agora</a>
-          <a class="btn ghost" href="#" data-plan="pro" data-wpp>Tirar dúvidas</a>
+      <nav class="menu">
+        <a href="../" class="btn small ghost">Home</a>
+        <a href="../briefing/" class="btn small">Briefing</a>
+      </nav>
+
+      <button class="lang" id="langToggle" type="button">
+        <span class="lang-pill" id="langLabel">PT</span>
+      </button>
+
+      <button class="hamb" id="hamb" type="button" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile" id="mobileMenu">
+      <a href="../">Home</a>
+      <a href="../briefing/">Briefing</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section dark">
+      <div class="container">
+        <h1 class="reveal" data-i18n="shop_title">Loja de Serviços</h1>
+        <p class="muted reveal" data-i18n="shop_subtitle">
+          Escolha o plano ideal. Após a compra, preencha o briefing para iniciar seu projeto.
+        </p>
+        <p class="muted reveal" style="margin-top:10px" data-i18n="hosting_note">
+          Domínio e hospedagem são contratados pelo cliente. Eu ajudo na configuração.
+        </p>
+
+        <div class="pricing">
+          <article class="price-card reveal">
+            <span class="tag">Entrada</span>
+            <h3 data-i18n="plan_basic_title">Site Básico Profissional</h3>
+            <p class="muted" data-i18n="plan_basic_desc">Presença online rápida e acessível para começar.</p>
+
+            <div class="price"><span class="currency">R$</span><span class="value">350</span></div>
+
+            <ul class="checks">
+              <li data-i18n="basic_1">1 página (Home) com seções essenciais</li>
+              <li data-i18n="basic_2">Responsivo (celular/PC)</li>
+              <li data-i18n="basic_3">Botão WhatsApp + CTA</li>
+              <li data-i18n="basic_4">Publicação do site</li>
+              <li data-i18n="basic_5">Prazo: 5 dias úteis</li>
+              <li data-i18n="hosting_client">Hospedagem por conta do cliente</li>
+            </ul>
+
+            <div class="price-actions">
+              <a class="btn primary" href="https://pay.kiwify.com.br/CRa9R2d" target="_blank" rel="noreferrer" data-i18n="btn_buy_now">Comprar agora</a>
+              <a class="btn ghost" href="#" data-wpp data-plan="Site Básico Profissional" data-i18n="btn_talk">Tirar dúvidas</a>
+            </div>
+          </article>
+
+          <article class="price-card featured reveal">
+            <div class="badge-top" data-i18n="featured_badge">Mais vendido</div>
+            <span class="tag">Recomendado</span>
+
+            <h3 data-i18n="plan_pro_title">Site Profissional Completo</h3>
+            <p class="muted" data-i18n="plan_pro_desc">Estrutura completa para empresas e marcas.</p>
+
+            <div class="price"><span class="currency">R$</span><span class="value">650</span></div>
+
+            <ul class="checks">
+              <li data-i18n="pro_1">Até 4 páginas (Home, Sobre, Serviços, Contato)</li>
+              <li data-i18n="pro_2">Animações suaves + rolagem premium</li>
+              <li data-i18n="pro_3">Formulário de contato + WhatsApp</li>
+              <li data-i18n="pro_4">SEO básico (títulos e descrição)</li>
+              <li data-i18n="pro_5">Prazo: 7–10 dias úteis</li>
+              <li data-i18n="hosting_client">Hospedagem por conta do cliente</li>
+            </ul>
+
+            <div class="price-actions">
+              <a class="btn primary" href="https://pay.kiwify.com.br/ipEGbsi" target="_blank" rel="noreferrer" data-i18n="btn_buy_now">Comprar agora</a>
+              <a class="btn ghost" href="#" data-wpp data-plan="Site Profissional Completo" data-i18n="btn_talk">Tirar dúvidas</a>
+            </div>
+          </article>
+
+          <article class="price-card reveal">
+            <span class="tag">Autoridade</span>
+
+            <h3 data-i18n="plan_premium_title">Site Premium Personalizado</h3>
+            <p class="muted" data-i18n="plan_premium_desc">Mais páginas e visual mais completo.</p>
+
+            <div class="price"><span class="currency">R$</span><span class="value">1200</span></div>
+
+            <ul class="checks">
+              <li data-i18n="premium_1">Até 7 páginas + estrutura completa</li>
+              <li data-i18n="premium_2">Design mais personalizado</li>
+              <li data-i18n="premium_3">SEO intermediário + performance</li>
+              <li data-i18n="premium_4">Integrações sob demanda</li>
+              <li data-i18n="premium_5">Prazo: ~15 dias úteis</li>
+              <li data-i18n="hosting_client">Hospedagem por conta do cliente</li>
+            </ul>
+
+            <div class="price-actions">
+              <a class="btn primary" href="https://pay.kiwify.com.br/3nc1k82" target="_blank" rel="noreferrer" data-i18n="btn_buy_now">Comprar agora</a>
+              <a class="btn ghost" href="#" data-wpp data-plan="Site Premium Personalizado" data-i18n="btn_talk">Tirar dúvidas</a>
+            </div>
+          </article>
         </div>
-      </article>
 
-      <article class="price-card reveal">
-        <span class="tag">Autoridade</span>
-        <h3>Site Premium Personalizado</h3>
-        <div class="price"><span class="currency">R$</span><span class="value">1200</span></div>
-        <ul class="checks">
-          <li>Até 7 páginas + estrutura completa</li>
-          <li>Design mais personalizado</li>
-          <li>SEO intermediário + performance</li>
-          <li>Integrações sob demanda</li>
-          <li>Prazo: ~15 dias úteis</li>
-        </ul>
-        <div class="price-actions">
-          <a class="btn primary" href="https://pay.kiwify.com.br/3nc1k82" target="_blank" rel="noreferrer">Comprar agora</a>
-          <a class="btn ghost" href="#" data-plan="premium" data-wpp>Tirar dúvidas</a>
+        <div class="grid-2" style="margin-top:18px">
+          <div class="card reveal">
+            <h3 data-i18n="addons_title">Extras (opcionais)</h3>
+            <ul class="list">
+              <li data-i18n="addon_1">Página extra: +R$ 120</li>
+              <li data-i18n="addon_2">Google Analytics + Pixel: +R$ 150</li>
+              <li data-i18n="addon_3">Copy/Texto (básico): +R$ 150</li>
+              <li data-i18n="addon_4">Logo simples: +R$ 120</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3 data-i18n="maintenance_title">Manutenção mensal</h3>
+            <p class="muted" data-i18n="maintenance_desc">Ideal para manter o site atualizado e com suporte.</p>
+
+            <div class="price mini">
+              <span class="currency">R$</span><span class="value">150</span><span class="per" data-i18n="per_month">/mês</span>
+            </div>
+
+            <div class="price-actions">
+              <a class="btn primary" href="https://pay.kiwify.com.br/JSpBY4r" target="_blank" rel="noreferrer" data-i18n="btn_subscribe_now">Assinar agora</a>
+              <a class="btn ghost" href="#" data-wpp data-plan="Manutenção Mensal" data-i18n="btn_talk">Falar comigo</a>
+            </div>
+          </div>
         </div>
-      </article>
 
-    </div>
+        <div class="faq" style="margin-top:22px">
+          <h3 class="reveal" data-i18n="faq_title">Perguntas rápidas</h3>
+          <div class="faq-grid">
+            <details class="faq-item reveal">
+              <summary data-i18n="faq1_q">Como funciona depois do pagamento?</summary>
+              <p class="muted" data-i18n="faq1_a">Você compra e depois preenche o briefing. Eu confirmo o prazo e inicio o projeto.</p>
+            </details>
 
-    <div class="trust reveal">
-      <h2>Garantia & Confiança</h2>
-      <ul>
-        <li>✔ Atendimento direto com o desenvolvedor</li>
-        <li>✔ Projeto começa após briefing</li>
-        <li>✔ Garantia de ajustes após entrega</li>
-      </ul>
-    </div>
+            <details class="faq-item reveal">
+              <summary data-i18n="faq2_q">Posso parcelar?</summary>
+              <p class="muted" data-i18n="faq2_a">Sim. O parcelamento depende do checkout da Kiwify.</p>
+            </details>
 
-    <div class="testimonials">
-      <div class="t-card reveal">
-        <p>“Atendimento rápido e o site ficou muito profissional. Recomendo!”</p>
-        <div class="who">— Cliente</div>
-      </div>
-      <div class="t-card reveal">
-        <p>“Entrega dentro do prazo e comunicação excelente.”</p>
-        <div class="who">— Cliente</div>
-      </div>
-      <div class="t-card reveal">
-        <p>“Visual bonito, rápido e responsivo. Gostei demais.”</p>
-        <div class="who">— Cliente</div>
-      </div>
-    </div>
-
-    <div class="cards" style="margin-top:18px">
-      <div class="card reveal">
-        <h3>Manutenção Mensal de Site</h3>
-        <p class="muted">Atualizações, correções e suporte contínuo.</p>
-        <div class="price"><span class="currency">R$</span><span class="value">150</span><span class="per">/mês</span></div>
-        <div class="price-actions">
-          <a class="btn primary" href="https://pay.kiwify.com.br/JSpBY4r" target="_blank" rel="noreferrer">Assinar agora</a>
-          <a class="btn ghost" href="#" data-plan="maintenance" data-wpp>Falar comigo</a>
+            <details class="faq-item reveal">
+              <summary data-i18n="faq3_q">Hospedagem está inclusa?</summary>
+              <p class="muted" data-i18n="faq3_a">Não. Hospedagem e domínio ficam por conta do cliente. Eu ajudo na configuração.</p>
+            </details>
+          </div>
         </div>
+
+        <div class="callout reveal" style="margin-top:22px">
+          <div>
+            <strong>Já comprou?</strong>
+            <p class="muted">Preencha o briefing para eu iniciar seu projeto.</p>
+          </div>
+          <a class="btn primary" href="../briefing/">Ir para o briefing</a>
+        </div>
+
       </div>
-    </div>
+    </section>
+  </main>
 
-  </div>
-</section>
+  <footer class="footer">
+    <p>© <span id="year"></span> TaylorTech</p>
+  </footer>
 
-<footer class="footer">
-  <p>© <span id="year"></span> TaylorTech</p>
-</footer>
-
-<script src="../js/script.js" defer></script>
+  <script src="../js/script.js" defer></script>
 </body>
 </html>

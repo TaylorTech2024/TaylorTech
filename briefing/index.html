@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Briefing | TaylorTech</title>
+  <meta name="description" content="Briefing do projeto TaylorTech. Preencha após a compra para iniciarmos o desenvolvimento." />
+  <meta name="theme-color" content="#0b0b0b" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="../raiz/" aria-label="Voltar ao site">
+      <span class="name">Taylor<span>Tech</span></span>
+      <span class="sub">briefing</span>
+    </a>
+
+    <div class="menu">
+      <a href="../raiz/" class="btn small ghost">Voltar</a>
+      <a href="../planos/" class="btn small">Planos</a>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h1>Briefing do Projeto</h1>
+    <p class="muted">Preencha para iniciarmos o desenvolvimento do seu site.</p>
+
+    <div class="note">
+      Seu código de atendimento: <strong id="orderId">TT-0000</strong>
+    </div>
+
+    <form class="form" data-briefing>
+      <div class="row-2">
+        <input class="input" type="text" name="nome" placeholder="Seu nome" required>
+        <input class="input" type="email" name="email" placeholder="Seu e-mail" required>
+      </div>
+
+      <div class="row-2">
+        <input class="input" type="text" name="whatsapp" placeholder="WhatsApp (com DDD)" required>
+        <select class="input" name="plano" required>
+          <option value="" selected disabled>Qual plano você comprou?</option>
+          <option>Site Básico Profissional</option>
+          <option>Site Profissional Completo</option>
+          <option>Site Premium Personalizado</option>
+          <option>Manutenção Mensal</option>
+        </select>
+      </div>
+
+      <input class="input" type="text" name="empresa" placeholder="Nome da empresa / projeto (se tiver)">
+
+      <textarea class="input" name="descricao" placeholder="Descreva seu projeto: o que você faz, objetivo, público, o que precisa no site..." required></textarea>
+
+      <textarea class="input" name="secoes" placeholder="Quais seções/páginas você quer? (Ex: Home, Sobre, Serviços, Galeria, Contato...)"></textarea>
+
+      <input class="input" type="text" name="cores" placeholder="Cores desejadas (Ex: preto e verde)">
+      <input class="input" type="text" name="referencias" placeholder="Sites de referência (cole links)">
+
+      <textarea class="input" name="conteudos" placeholder="Você já tem textos e imagens? Se sim, descreva ou diga onde vai enviar (WhatsApp/Drive)"></textarea>
+
+      <button type="submit" class="btn primary">Enviar briefing</button>
+
+      <p class="small">
+        Após enviar, eu entro em contato para confirmar prazo e início do projeto.
+      </p>
+    </form>
+
+    <div class="note" id="doneBox" style="display:none;margin-top:16px">
+      ✅ Briefing enviado com sucesso!  
+      Agora é só aguardar meu contato no WhatsApp para confirmar o início.
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> TaylorTech</p>
+</footer>
+
+<script src="../js/briefing.js" defer></script>
+</body>
+</html>

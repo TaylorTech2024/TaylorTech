@@ -9,8 +9,8 @@
   <meta name="description" content="TaylorTech — Portfólio e serviços de desenvolvimento web. Sites rápidos, responsivos e sistemas sob medida." />
   <meta name="theme-color" content="#0b0b0b" />
 
-  <!-- CSS (sobe um nível porque está em /docs) -->
-  <link rel="stylesheet" href="../css/style.css">
+  <!-- CSS (fora do docs) -->
+  <link rel="stylesheet" href="../css/style.css" />
 
   <!-- Fonte -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,200 +19,199 @@
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container nav">
-      <a class="brand" href="#top" data-scroll>
-        <span class="name">Taylor<span>Tech</span></span>
-        <span class="sub">web systems</span>
-      </a>
 
-      <nav class="menu">
-        <a href="#sobre" data-scroll>Sobre</a>
-        <a href="#competencias" data-scroll>Competências</a>
-        <a href="#formacao" data-scroll>Formação</a>
-        <a href="#cursos" data-scroll>Cursos</a>
-        <a href="#portfolio" data-scroll>Portfólio</a>
-        <a href="../planos/">Loja</a>
-        <a href="#contato" class="btn small">Orçamento</a>
-      </nav>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#top">
+      <span class="brand-name">Taylor<span>Tech</span></span>
+      <span class="brand-sub">web systems</span>
+    </a>
 
-      <button class="lang" id="langToggle" type="button">
-        <span class="lang-pill" id="langLabel">PT</span>
-      </button>
+    <nav class="menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#competencias">Competências</a>
+      <a href="#formacao">Formação</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="../planos/">Loja</a>
+      <a href="#contato" class="btn small">Orçamento</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="pill">Disponível para projetos • Sites & Sistemas Web</div>
+
+      <h1>Herbert Taylor</h1>
+
+      <h2 class="role">
+        <span id="roleText">Programador Web</span>
+        <span class="cursor">|</span>
+      </h2>
+
+      <p class="muted">
+        Crio experiências modernas na web: sites rápidos, responsivos e sistemas sob medida.
+        Do design ao deploy, com foco em performance e conversão.
+      </p>
+
+      <div class="actions">
+        <a href="../planos/" class="btn primary">Ver planos</a>
+        <a href="#contato" class="btn ghost">Falar comigo</a>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container reveal">
-        <div class="pill">Disponível para projetos • Sites & Sistemas Web</div>
+  <!-- SOBRE -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2>Sobre mim</h2>
+      <p class="muted">
+        Profissional focado em desenvolvimento web, com experiência em programação,
+        criação de sites profissionais e sistemas web. Fundador da TaylorTech.
+      </p>
+    </div>
+  </section>
 
-        <h1>Herbert Taylor</h1>
+  <!-- COMPETÊNCIAS -->
+  <section id="competencias" class="section dark">
+    <div class="container">
+      <h2>Competências</h2>
 
-        <h2 class="role">
-          <span id="roleText">Programador Web</span>
-          <span class="cursor">|</span>
-        </h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Stack</h3>
+          <ul class="list">
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C / Java</li>
+            <li>SQL</li>
+            <li>Git / GitHub</li>
+            <li>React</li>
+          </ul>
+        </div>
 
-        <p class="muted">
-          Crio experiências modernas na web: sites rápidos, responsivos e sistemas sob medida.
-          Do design ao deploy, com foco em performance e conversão.
-        </p>
+        <div class="card">
+          <h3>Boas práticas</h3>
+          <ul class="list">
+            <li>Responsividade</li>
+            <li>SEO básico</li>
+            <li>Performance</li>
+            <li>Organização de código</li>
+          </ul>
+        </div>
 
-        <div class="actions">
-          <a href="../planos/" class="btn primary">Ver planos</a>
-          <a href="#contato" class="btn ghost" data-scroll>Falar comigo</a>
+        <div class="card">
+          <h3>Perfil</h3>
+          <ul class="list">
+            <li>Organizado</li>
+            <li>Comunicativo</li>
+            <li>Foco em resultados</li>
+            <li>Aprendizado contínuo</li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SOBRE -->
-    <section id="sobre" class="section">
-      <div class="container">
-        <h2 class="reveal">Sobre mim</h2>
-        <p class="muted reveal">
-          Profissional focado em desenvolvimento web, com experiência em programação,
-          criação de sites profissionais e sistemas web. Fundador da TaylorTech.
-        </p>
-      </div>
-    </section>
+  <!-- FORMAÇÃO -->
+  <section id="formacao" class="section">
+    <div class="container">
+      <h2>Formação</h2>
 
-    <!-- COMPETÊNCIAS -->
-    <section id="competencias" class="section dark">
-      <div class="container">
-        <h2 class="reveal">Competências</h2>
-
-        <div class="cards">
-          <div class="card reveal">
-            <h3>Stack</h3>
-            <ul class="list">
-              <li>HTML / CSS</li>
-              <li>JavaScript</li>
-              <li>Python</li>
-              <li>C / Java</li>
-              <li>SQL</li>
-              <li>Git / GitHub</li>
-              <li>React</li>
-            </ul>
-          </div>
-
-          <div class="card reveal">
-            <h3>Boas práticas</h3>
-            <ul class="list">
-              <li>Responsividade</li>
-              <li>SEO básico</li>
-              <li>Performance</li>
-              <li>Organização de código</li>
-            </ul>
-          </div>
-
-          <div class="card reveal">
-            <h3>Perfil</h3>
-            <ul class="list">
-              <li>Organizado</li>
-              <li>Comunicativo</li>
-              <li>Foco em resultados</li>
-              <li>Aprendizado contínuo</li>
-            </ul>
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-box">
+            <strong>UNIBRA</strong>
+            <p class="muted">Análise e Desenvolvimento de Sistemas — 2025/2027</p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- FORMAÇÃO -->
-    <section id="formacao" class="section">
-      <div class="container">
-        <h2 class="reveal">Formação</h2>
-
-        <div class="timeline">
-          <div class="t-item reveal">
-            <div class="t-dot"></div>
-            <div class="t-box">
-              <strong>UNIBRA</strong>
-              <p class="muted">Análise e Desenvolvimento de Sistemas — 2025/2027</p>
-            </div>
-          </div>
-
-          <div class="t-item reveal">
-            <div class="t-dot"></div>
-            <div class="t-box">
-              <strong>ETE Prof. Antônio Carlos Gomes da Costa</strong>
-              <p class="muted">Técnico em Desenvolvimento de Sistemas — 2023/2024</p>
-            </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-box">
+            <strong>ETE Prof. Antônio Carlos Gomes da Costa</strong>
+            <p class="muted">Técnico em Desenvolvimento de Sistemas — 2023/2024</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CURSOS -->
-    <section id="cursos" class="section dark">
-      <div class="container">
-        <h2 class="reveal">Cursos & Workshops</h2>
+  <!-- CURSOS -->
+  <section id="cursos" class="section dark">
+    <div class="container">
+      <h2>Cursos & Workshops</h2>
 
-        <div class="cards">
-          <div class="card reveal">
-            <h3>SENAI</h3>
-            <ul class="list">
-              <li>TIC — 14h (2022)</li>
-              <li>Lógica de Programação — 14h (2022)</li>
-            </ul>
-          </div>
+      <div class="cards">
+        <div class="card">
+          <h3>SENAI</h3>
+          <ul class="list">
+            <li>TIC — 14h (2022)</li>
+            <li>Lógica de Programação — 14h (2022)</li>
+          </ul>
+        </div>
 
-          <div class="card reveal">
-            <h3>IEC Brasil</h3>
-            <ul class="list">
-              <li>Imersão em Reparo de Smartphones — 40h (2024)</li>
-            </ul>
-          </div>
+        <div class="card">
+          <h3>IEC Brasil</h3>
+          <ul class="list">
+            <li>Imersão em Reparo de Smartphones — 40h (2024)</li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PORTFÓLIO -->
-    <section id="portfolio" class="section">
-      <div class="container">
-        <h2 class="reveal">Portfólio</h2>
+  <!-- PORTFÓLIO -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Portfólio</h2>
 
-        <div class="cards">
-          <div class="card reveal">
-            <h3>Site Institucional</h3>
-            <p class="muted">Layout moderno e responsivo</p>
-          </div>
+      <div class="cards">
+        <div class="card">
+          <h3>Site Institucional</h3>
+          <p class="muted">Layout moderno e responsivo</p>
+        </div>
 
-          <div class="card reveal">
-            <h3>Landing Page</h3>
-            <p class="muted">Foco em conversão</p>
-          </div>
+        <div class="card">
+          <h3>Landing Page</h3>
+          <p class="muted">Foco em conversão</p>
+        </div>
 
-          <div class="card reveal">
-            <h3>Sistema Web</h3>
-            <p class="muted">CRUD, login e banco de dados</p>
-          </div>
+        <div class="card">
+          <h3>Sistema Web</h3>
+          <p class="muted">CRUD, login e banco de dados</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CONTATO -->
-    <section id="contato" class="section">
-      <div class="container">
-        <h2 class="reveal">Contato</h2>
-        <a class="btn primary" href="https://wa.me/5581994582007" target="_blank">
-          Falar no WhatsApp
-        </a>
-        <p class="muted small">
-          GitHub: TaylorTech2024 • Instagram: @taylorzzx_
-        </p>
-      </div>
-    </section>
+  <!-- CONTATO -->
+  <section id="contato" class="section">
+    <div class="container">
+      <h2>Contato</h2>
+      <a class="btn primary" href="https://wa.me/5581994582007" target="_blank">
+        Falar no WhatsApp
+      </a>
+      <p class="muted small">
+        GitHub: TaylorTech2024 • Instagram: @taylorzzx_
+      </p>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <p>© <span id="year"></span> TaylorTech • Herbert Taylor</p>
-    </footer>
-  </main>
+  <footer class="footer">
+    <p>© <span id="year"></span> TaylorTech • Herbert Taylor</p>
+  </footer>
 
-  <!-- JS (sobe um nível porque está em /docs) -->
-  <script src="../js/script.js" defer></script>
+</main>
+
+<!-- JS (fora do docs) -->
+<script src="../js/script.js" defer></script>
+
 </body>
 </html>

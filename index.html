@@ -6,7 +6,7 @@
   <title>TaylorTech | Web Development</title>
 
   <link rel="stylesheet" href="./css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,11 +23,10 @@
       <nav class="menu" aria-label="Menu">
         <a href="#sobre" data-scroll data-i18n="nav_about">Sobre</a>
         <a href="#competencias" data-scroll data-i18n="nav_skills">Competências</a>
-        <a href="#carreira" data-scroll data-i18n="nav_career">Carreira</a>
         <a href="#formacao" data-scroll data-i18n="nav_edu">Formação</a>
         <a href="#cursos" data-scroll data-i18n="nav_courses">Cursos</a>
         <a href="#portfolio" data-scroll data-i18n="nav_portfolio">Portfólio</a>
-        <a href="#servicos" data-scroll data-i18n="nav_services">Serviços</a>
+        <a href="#loja" data-scroll data-i18n="nav_shop">Loja</a>
         <a href="#contato" class="btn small" data-scroll data-i18n="nav_quote">Orçamento</a>
       </nav>
 
@@ -44,24 +43,29 @@
         <div class="pill" data-i18n="hero_pill">Disponível para projetos • Sites & Sistemas Web</div>
 
         <h2 data-i18n="hero_name">Herbert Taylor</h2>
-<h3 class="role">
-  <span id="roleText">Programador Web</span>
-  <span class="cursor">|</span>
-</h3>
+
+        <!-- ROLE ANIMADO -->
+        <h3 class="role">
+          <span id="roleText">Programador Web</span>
+          <span class="cursor">|</span>
+        </h3>
+
         <p data-i18n="hero_desc">
-          Crio experiências modernas na web: sites rápidos, responsivos e sistemas
-          sob medida. Do design ao deploy, com foco em performance e conversão.
+          Crio experiências modernas na web: sites rápidos, responsivos e sistemas sob medida.
+          Do design ao deploy, com foco em performance e conversão.
         </p>
 
         <div class="actions">
-          <a href="#portfolio" class="btn primary" data-scroll data-i18n="hero_btn_portfolio">Ver portfólio</a>
+          <a href="#loja" class="btn primary" data-scroll data-i18n="hero_btn_shop">Ver planos</a>
           <a href="#contato" class="btn ghost" data-scroll data-i18n="hero_btn_contact">Falar comigo</a>
         </div>
 
         <div class="mini-stats">
           <div class="stat reveal">
             <span class="ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h8l-1 8 11-14h-8l0-6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M13 2L3 14h8l-1 8 11-14h-8l0-6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
             </span>
             <div>
               <strong data-i18n="stat1_title">Web</strong>
@@ -71,7 +75,9 @@
 
           <div class="stat reveal">
             <span class="ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l1.4 5.2L18 9l-4.6 1.8L12 16l-1.4-5.2L6 9l4.6-1.8L12 2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2l1.4 5.2L18 9l-4.6 1.8L12 16l-1.4-5.2L6 9l4.6-1.8L12 2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
             </span>
             <div>
               <strong data-i18n="stat2_title">UI</strong>
@@ -81,7 +87,11 @@
 
           <div class="stat reveal">
             <span class="ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M14 4c4 0 6 2 6 6-2 7-8 10-12 10-1 0-2-1-2-2 0-4 3-10 10-12z" stroke="currentColor" stroke-width="1.8"/><path d="M8 16l-4 4 6-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M15 9h0" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M14 4c4 0 6 2 6 6-2 7-8 10-12 10-1 0-2-1-2-2 0-4 3-10 10-12z" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M8 16l-4 4 6-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M15 9h0" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+              </svg>
             </span>
             <div>
               <strong data-i18n="stat3_title">Deploy</strong>
@@ -113,7 +123,11 @@
           <div class="card reveal">
             <div class="card-head">
               <span class="ico" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M9 18l-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 4l-4 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M9 18l-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14 4l-4 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
               </span>
               <h3 data-i18n="skills_tech_title">Stack / Técnicas</h3>
             </div>
@@ -133,7 +147,9 @@
           <div class="card reveal">
             <div class="card-head">
               <span class="ico" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v7c0 5-3 8-8 9-5-1-8-4-8-9V6l8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2l8 4v7c0 5-3 8-8 9-5-1-8-4-8-9V6l8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                </svg>
               </span>
               <h3 data-i18n="skills_practices_title">Boas práticas</h3>
             </div>
@@ -142,14 +158,17 @@
               <li data-i18n="skills_patterns">Organização de código e padrões</li>
               <li data-i18n="skills_cta">Integração com WhatsApp / links e CTA</li>
               <li data-i18n="skills_seo">SEO básico e performance</li>
-              <li data-i18n="skills_deploy">Deploy com GitHub Pages</li>
+              <li data-i18n="skills_deploy">Deploy com GitHub Pages / Vercel</li>
             </ul>
           </div>
 
           <div class="card reveal">
             <div class="card-head">
               <span class="ico" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M16 11a4 4 0 10-8 0 4 4 0 008 0z" stroke="currentColor" stroke-width="1.8"/><path d="M4 21c1.5-4 14.5-4 16 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M16 11a4 4 0 10-8 0 4 4 0 008 0z" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M4 21c1.5-4 14.5-4 16 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
               </span>
               <h3 data-i18n="skills_soft_title">Comportamentais</h3>
             </div>
@@ -165,37 +184,8 @@
       </div>
     </section>
 
-    <!-- CARREIRA -->
-    <section id="carreira" class="section">
-      <div class="container">
-        <h2 class="reveal" data-i18n="career_title">Carreira</h2>
-
-        <div class="timeline">
-          <div class="t-item reveal">
-            <div class="t-dot"></div>
-            <div class="t-box">
-              <strong data-i18n="career_1_title">2026 • Taylor Tech</strong>
-              <p class="muted" data-i18n="career_1_desc">
-                Websites e sistemas web sob medida, identidade verde e preto, foco em experiência e conversão.
-              </p>
-            </div>
-          </div>
-
-          <div class="t-item reveal">
-            <div class="t-dot"></div>
-            <div class="t-box">
-              <strong data-i18n="career_2_title">Projetos pessoais</strong>
-              <p class="muted" data-i18n="career_2_desc">
-                Portfólios, páginas de serviços, sistemas CRUD, integrações e deploy no GitHub.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FORMAÇÃO (TIMELINE) -->
-    <section id="formacao" class="section dark">
+    <!-- FORMAÇÃO -->
+    <section id="formacao" class="section">
       <div class="container">
         <h2 class="reveal" data-i18n="edu_title">Formação</h2>
 
@@ -208,8 +198,8 @@
                 <span class="badge" data-i18n="edu_1_badge">Cursando</span>
               </div>
               <p class="muted" data-i18n="edu_1_desc">
-  Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (ADS) — 2025/2027.
-</p>
+                Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (ADS) — 2025/2027.
+              </p>
             </div>
           </div>
 
@@ -230,7 +220,7 @@
     </section>
 
     <!-- CURSOS -->
-    <section id="cursos" class="section">
+    <section id="cursos" class="section dark">
       <div class="container">
         <h2 class="reveal" data-i18n="courses_title">Cursos & Workshops</h2>
 
@@ -261,8 +251,8 @@
       </div>
     </section>
 
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="section dark">
+    <!-- PORTFÓLIO -->
+    <section id="portfolio" class="section">
       <div class="container">
         <h2 class="reveal" data-i18n="portfolio_title">Portfólio</h2>
         <div class="cards">
@@ -282,29 +272,218 @@
       </div>
     </section>
 
-    <!-- SERVIÇOS -->
-    <section id="servicos" class="section">
+    <!-- LOJA -->
+    <section id="loja" class="section dark">
       <div class="container">
-        <h2 class="reveal" data-i18n="services_title">Serviços</h2>
-        <div class="cards">
-          <div class="card reveal">
-            <h3 data-i18n="s1_title">Criação de Websites</h3>
-            <p class="muted" data-i18n="s1_desc">Institucional, portfólio, landing page e páginas de serviços.</p>
+        <div class="shop-head">
+          <h2 class="reveal" data-i18n="shop_title">Loja de Serviços</h2>
+          <p class="muted reveal" data-i18n="shop_subtitle">
+            Escolha o plano ideal para seu negócio. Após a compra, você recebe o link do briefing e começamos o projeto.
+          </p>
+          <p class="muted reveal" style="margin-top:10px" data-i18n="hosting_note">
+            Domínio e hospedagem são contratados pelo cliente. Eu ajudo na configuração.
+          </p>
+        </div>
+
+        <div class="pricing">
+          <!-- Básico -->
+          <div class="price-card reveal">
+            <div class="price-top">
+              <span class="tag" data-i18n="plan_basic_tag">Entrada</span>
+
+              <div class="plan-hero">
+                <div class="plan-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M7 8h10M7 12h7M7 16h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M6 3h12a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2z" stroke="currentColor" stroke-width="1.8"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 data-i18n="plan_basic_title">Site Básico</h3>
+                  <p class="muted" data-i18n="plan_basic_desc">Ideal para começar com presença profissional no Instagram/Google.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="price">
+              <span class="currency">R$</span>
+              <span class="value">350</span>
+            </div>
+
+            <ul class="checks">
+              <li data-i18n="basic_1">1 página (Home) com seções essenciais</li>
+              <li data-i18n="basic_2">Responsivo (celular/PC)</li>
+              <li data-i18n="basic_3">Botão WhatsApp + CTA</li>
+              <li data-i18n="basic_4">Deploy (Vercel ou GitHub)</li>
+              <li data-i18n="basic_5">Prazo: 5 dias úteis</li>
+              <li data-i18n="hosting_client">Domínio e hospedagem por conta do cliente</li>
+            </ul>
+
+            <div class="price-actions">
+              <a class="btn primary buy-btn" href="#" data-plan="basic" data-i18n="btn_buy">Comprar</a>
+              <a class="btn ghost" href="#" data-plan="basic" data-wpp data-i18n="btn_talk">Tirar dúvidas</a>
+            </div>
           </div>
-          <div class="card reveal">
-            <h3 data-i18n="s2_title">Sistemas Web</h3>
-            <p class="muted" data-i18n="s2_desc">Painel admin, CRUD, login, integrações e banco de dados.</p>
+
+          <!-- Profissional (destaque) -->
+          <div class="price-card featured reveal">
+            <div class="badge-top" data-i18n="featured_badge">Mais vendido</div>
+
+            <div class="price-top">
+              <span class="tag" data-i18n="plan_pro_tag">Recomendado</span>
+
+              <div class="plan-hero">
+                <div class="plan-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 7h16M6 11h12M6 15h9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M4 5a2 2 0 012-2h12a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V5z" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M16 18l2 2 3-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 data-i18n="plan_pro_title">Site Profissional</h3>
+                  <p class="muted" data-i18n="plan_pro_desc">Perfeito para empresas: páginas + formulário + SEO básico.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="price">
+              <span class="currency">R$</span>
+              <span class="value">650</span>
+            </div>
+
+            <ul class="checks">
+              <li data-i18n="pro_1">Até 4 páginas (Home, Sobre, Serviços, Contato)</li>
+              <li data-i18n="pro_2">Animações suaves + rolagem premium</li>
+              <li data-i18n="pro_3">Formulário de contato + WhatsApp</li>
+              <li data-i18n="pro_4">SEO básico (títulos, descrição, performance)</li>
+              <li data-i18n="pro_5">Prazo: 7–10 dias úteis</li>
+              <li data-i18n="hosting_client">Domínio e hospedagem por conta do cliente</li>
+            </ul>
+
+            <div class="price-actions">
+              <a class="btn primary buy-btn" href="#" data-plan="pro" data-i18n="btn_buy">Comprar</a>
+              <a class="btn ghost" href="#" data-plan="pro" data-wpp data-i18n="btn_talk">Tirar dúvidas</a>
+            </div>
           </div>
+
+          <!-- Premium -->
+          <div class="price-card reveal">
+            <div class="price-top">
+              <span class="tag" data-i18n="plan_premium_tag">Autoridade</span>
+
+              <div class="plan-hero">
+                <div class="plan-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M6 20h12M8 20V9a4 4 0 118 0v11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M12 3l3 3-3 3-3-3 3-3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 data-i18n="plan_premium_title">Site Premium</h3>
+                  <p class="muted" data-i18n="plan_premium_desc">Design mais personalizado, mais páginas e presença forte.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="price">
+              <span class="currency">R$</span>
+              <span class="value">1200</span>
+            </div>
+
+            <ul class="checks">
+              <li data-i18n="premium_1">Até 7 páginas + estrutura completa</li>
+              <li data-i18n="premium_2">Design mais personalizado</li>
+              <li data-i18n="premium_3">SEO intermediário + performance</li>
+              <li data-i18n="premium_4">Integrações sob demanda</li>
+              <li data-i18n="premium_5">Prazo: ~15 dias úteis</li>
+              <li data-i18n="hosting_client">Domínio e hospedagem por conta do cliente</li>
+            </ul>
+
+            <div class="price-actions">
+              <a class="btn primary buy-btn" href="#" data-plan="premium" data-i18n="btn_buy">Comprar</a>
+              <a class="btn ghost" href="#" data-plan="premium" data-wpp data-i18n="btn_talk">Tirar dúvidas</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-grid">
           <div class="card reveal">
-            <h3 data-i18n="s3_title">Manutenção</h3>
-            <p class="muted" data-i18n="s3_desc">Ajustes, melhorias, performance, SEO e correções.</p>
+            <h3 data-i18n="addons_title">Extras (opcionais)</h3>
+            <ul class="list">
+              <li data-i18n="addon_1">Página extra: +R$ 120</li>
+              <li data-i18n="addon_2">Google Analytics + Pixel: +R$ 150</li>
+              <li data-i18n="addon_3">Copy/Texto (básico): +R$ 150</li>
+              <li data-i18n="addon_4">Logo simples: +R$ 120</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3 data-i18n="maintenance_title">Manutenção mensal</h3>
+            <p class="muted" data-i18n="maintenance_desc">Ideal para manter o site atualizado e com suporte.</p>
+            <div class="price mini">
+              <span class="currency">R$</span>
+              <span class="value">150</span>
+              <span class="per" data-i18n="per_month">/mês</span>
+            </div>
+            <div class="price-actions">
+              <a class="btn primary buy-btn" href="#" data-plan="maintenance" data-i18n="btn_subscribe">Assinar</a>
+              <a class="btn ghost" href="#" data-plan="maintenance" data-wpp data-i18n="btn_talk">Falar comigo</a>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3 data-i18n="system_title">Sistema Web (com login)</h3>
+            <p class="muted" data-i18n="system_desc">
+              Painel admin, CRUD, autenticação e banco. Varia por projeto.
+            </p>
+            <p class="muted" style="margin-top:10px" data-i18n="system_note">
+              A partir de <strong>R$ 1.800</strong> (sob orçamento).
+            </p>
+            <div class="price-actions">
+              <a class="btn primary" href="#contato" data-scroll data-i18n="btn_quote">Solicitar orçamento</a>
+              <a class="btn ghost" href="#" data-plan="system" data-wpp data-i18n="btn_talk">Explicar minha ideia</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq">
+          <h3 class="reveal" data-i18n="faq_title">Perguntas rápidas</h3>
+          <div class="faq-grid">
+            <details class="faq-item reveal">
+              <summary data-i18n="faq1_q">Como funciona depois do pagamento?</summary>
+              <p class="muted" data-i18n="faq1_a">
+                Você recebe um link para preencher o briefing (informações do site). Eu confirmo o prazo e inicio o projeto.
+              </p>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary data-i18n="faq2_q">Posso parcelar?</summary>
+              <p class="muted" data-i18n="faq2_a">
+                Sim. O parcelamento depende das opções disponíveis no checkout (Kiwify/Mercado Pago).
+              </p>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary data-i18n="faq3_q">Domínio e hospedagem estão inclusos?</summary>
+              <p class="muted" data-i18n="faq3_a">
+                Não. Domínio e hospedagem ficam por conta do cliente. Eu ajudo a configurar e oriento as melhores opções.
+              </p>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary data-i18n="faq4_q">O que eu preciso te enviar?</summary>
+              <p class="muted" data-i18n="faq4_a">
+                Logo (se tiver), cores de preferência, textos (ou eu te ajudo), fotos e referência de sites que você gosta.
+              </p>
+            </details>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CONTATO -->
-    <section id="contato" class="section dark">
+    <section id="contato" class="section">
       <div class="container">
         <h2 class="reveal" data-i18n="contact_title">Contato</h2>
         <div class="contact reveal">

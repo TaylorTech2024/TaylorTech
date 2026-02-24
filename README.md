@@ -1,50 +1,25 @@
 # TaylorTech
 
-Portfólio pessoal focado em **programação web**.  
-Projeto criado para apresentar minha trajetória, formação, competências e alguns trabalhos na área de desenvolvimento de sistemas e websites.
+Site oficial/portfólio da TaylorTech (Herbert Taylor) + página de planos e briefing pós-compra.
 
-🔗 **Acesse o site:**  
-https://taylortech2024.github.io/TaylorTech/
+## Estrutura
+- `docs/` → site publicado no GitHub Pages
+  - `index.html` → home/portfólio
+  - `planos/` → loja (links Kiwify)
+  - `briefing/` → formulário de briefing
+  - `css/` e `js/` → estilos e scripts
 
----
+## Deploy (GitHub Pages)
+1. Repositório → Settings → Pages
+2. Source: Deploy from a branch
+3. Branch: `main`
+4. Folder: `/docs`
+5. Save
 
-## Sobre o projeto
+## Atualizar links da loja
+Arquivo: `docs/planos/index.html`  
+Procure por `pay.kiwify.com.br` e troque pelos links novos (se precisar).
 
-Este site funciona como meu portfólio profissional.  
-A ideia foi criar algo simples, rápido e direto, sem frameworks pesados, priorizando organização de código, performance e experiência do usuário.
-
-O layout é responsivo, com animações leves e navegação suave.
-
----
-
-## Funcionalidades
-
-- Navegação com rolagem suave
-- Animações ao rolar a página
-- Destaque automático da seção ativa no menu
-- Alternância de idioma **Português / Inglês**
-- Formação exibida em formato timeline
-- Visual escuro com identidade verde (TaylorTech)
-
----
-
-## Tecnologias utilizadas
-
-- **HTML5**
-- **CSS3**
-- **JavaScript (Vanilla)**
-
-Sem bibliotecas externas ou frameworks.
-
----
-
-## Estrutura do projeto
-
-```txt
-TAYLORTECH/
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-└── img/
+## Contato
+WhatsApp: https://wa.me/5581994582007  
+GitHub: https://github.com/TaylorTech2024

@@ -8,6 +8,9 @@
   --green:#00ff66;
   --shadow: 0 12px 40px rgba(0,0,0,.45);
   --radius: 18px;
+
+  /* ✅ Aumenta o “conteúdo” para caber 4 cards */
+  --container: 1280px;
 }
 
 *{box-sizing:border-box}
@@ -23,7 +26,7 @@ body{
 
 a{color:inherit; text-decoration:none}
 ul{margin:0; padding-left:18px}
-.container{max-width:1100px; margin:0 auto; padding:0 18px}
+.container{max-width:var(--container); margin:0 auto; padding:0 18px}
 
 .header{
   position:sticky; top:0; z-index:40;
@@ -44,6 +47,7 @@ ul{margin:0; padding-left:18px}
 .menu{display:flex; align-items:center; gap:14px}
 .menu a{font-size:14px; color:var(--muted)}
 .menu a:hover{color:var(--text)}
+
 .btn{
   display:inline-flex; align-items:center; justify-content:center;
   padding:11px 14px;
@@ -195,122 +199,135 @@ h2{font-size:28px}
 }
 .float-wpp:hover{background: rgba(0,255,102,.18)}
 
+/* =========================================
+   PRICING / PLANOS (✅ 4 cards horizontais)
+========================================= */
+
 .pricing{
   display:grid;
-  grid-template-columns: repeat(3, minmax(0,1fr));
-  gap:14px;
-  margin-top:18px;
+  grid-template-columns: repeat(4, minmax(240px, 1fr));
+  gap:22px;
+  margin-top:28px;
+  align-items:stretch;
 }
+
 .price-card{
-  border:1px solid var(--border);
-  background: rgba(255,255,255,.03);
-  border-radius: var(--radius);
-  padding:16px;
+  position:relative; /* ✅ necessário pro badge-top */
+  background: linear-gradient(180deg, #0f0f0f, #090909);
+  border-radius: 18px;
+  padding: 22px;
+  border: 1px solid rgba(255,255,255,0.06);
   box-shadow: var(--shadow);
-  position:relative;
-  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  transition: transform .3s ease, box-shadow .3s ease, border .3s ease;
 }
+
+.price-card:hover{
+  transform: translateY(-6px);
+  border-color: rgba(0,255,102,.40);
+  box-shadow: 0 18px 40px rgba(0,0,0,.55);
+}
+
 .price-card.featured{
-  border-color: rgba(0,255,102,.35);
-  background: rgba(0,255,102,.06);
+  border: 2px solid var(--green);
+  box-shadow: 0 0 0 1px rgba(0,255,102,.20);
 }
+
+.price-card .tag{
+  display:inline-block;
+  font-size:12px;
+  font-weight:800;
+  padding:6px 12px;
+  border-radius:999px;
+  background: rgba(0,255,102,.15);
+  color: var(--green);
+  width:fit-content;
+  margin-bottom:10px;
+}
+
 .badge-top{
-  position:absolute; top:12px; right:12px;
-  font-size:12px; font-weight:900;
-  padding:6px 10px;
+  position:absolute;
+  top:-10px;
+  right:14px;
+  background: var(--green);
+  color:#000;
+  font-size:12px;
+  font-weight:900;
+  padding:6px 12px;
   border-radius:999px;
-  background: rgba(0,255,102,.18);
-  border:1px solid rgba(0,255,102,.35);
-  color:#caffdd;
 }
-.tag{
-  display:inline-flex;
-  font-size:12px; font-weight:900;
-  padding:6px 10px;
-  border-radius:999px;
-  border:1px solid var(--border);
-  background: rgba(255,255,255,.04);
-  color:var(--muted);
+
+.price{
+  display:flex;
+  align-items:flex-end;
+  gap:6px;
+  margin: 14px 0;
 }
-.price{display:flex; align-items:baseline; gap:6px; margin:10px 0 12px}
-.price .currency{color:var(--muted); font-weight:800}
-.price .value{font-size:34px; font-weight:900; letter-spacing:-.5px}
-.price .per{color:var(--muted); font-weight:700; margin-left:4px}
-.price.mini .value{font-size:28px}
-.checks{list-style:none; padding:0; margin:0}
-.checks li{
-  padding-left:22px;
-  margin:10px 0;
-  color:var(--muted);
-  position:relative;
+
+.price .currency{
+  font-size:18px;
+  opacity:.75;
 }
-.checks li::before{
-  content:"✓";
-  position:absolute; left:0; top:0;
-  color:var(--green);
+
+.price .value{
+  font-size:34px;
+  font-weight:900;
+  letter-spacing:-.5px;
+}
+
+.price.mini .value{
+  font-size:22px; /* ✅ melhor pro “Sob orçamento” */
   font-weight:900;
 }
-.price-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
 
-.grid-2{
-  display:grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap:14px;
-}
-
-.faq{margin-top:18px}
-.faq-grid{
-  display:grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap:12px;
-  margin-top:10px;
-}
-.faq-item{
-  border:1px solid var(--border);
-  background: rgba(255,255,255,.03);
-  border-radius: var(--radius);
-  padding:12px 14px;
-}
-.faq-item summary{cursor:pointer; font-weight:800}
-.faq-item p{margin:10px 0 0}
-
-.note{
-  border:1px solid rgba(0,255,102,.25);
-  background: rgba(0,255,102,.06);
-  border-radius: var(--radius);
-  padding:12px 14px;
-  color:#caffdd;
+.price .per{
+  font-size:14px;
+  opacity:.6;
+  margin-left:4px;
 }
 
-.form{margin-top:14px; display:flex; flex-direction:column; gap:10px}
-.row-2{display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:10px}
-.input{
-  width:100%;
-  border:1px solid var(--border);
-  background: rgba(255,255,255,.03);
-  color:var(--text);
-  border-radius: 14px;
-  padding:12px 12px;
-  outline:none;
-}
-textarea.input{min-height:120px; resize:vertical}
-
-.reveal{
-  opacity:0;
-  transform: translateY(16px);
-  transition: .6s ease;
-}
-.reveal.show{
-  opacity:1;
-  transform: translateY(0);
+.checks{
+  list-style:none;
+  padding:0;
+  margin: 14px 0 18px;
 }
 
-@media (max-width: 980px){
-  .cards{grid-template-columns: 1fr}
-  .pricing{grid-template-columns: 1fr}
-  .grid-2{grid-template-columns: 1fr}
-  .faq-grid{grid-template-columns: 1fr}
-  .menu{display:none}
-  .hamb{display:inline-flex}
-  .hero-title{font-size:36px}
+.checks li{
+  display:flex;
+  gap:8px;
+  font-size:14px;
+  margin-bottom:8px;
+  color: var(--muted);
+}
+
+.checks li::before{
+  content:"✓";
+  color: var(--green);
+  font-weight:900;
+}
+
+.price-actions{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-top:auto; /* ✅ botões sempre no final */
+}
+
+/* ✅ Responsivo */
+@media (max-width: 1200px){
+  .pricing{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px){
+  .pricing{ grid-template-columns: 1fr; }
+}
+
+/* ✅ Ajustes gerais responsivos */
+@media (max-width: 920px){
+  .cards{ grid-template-columns: 1fr; }
+  .menu{ display:none; }
+  .hamb{ display:inline-flex; }
+  .mobile.show{ display:block; }
 }
